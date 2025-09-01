@@ -145,7 +145,7 @@ MonoBehaviour:
   jumpInput: 0
   maxSpeed: 5
   jumpForce: 10
-  airFriction: 20
+  airFriction: 10
   groundFriction: 20
   upGravity: 10
   downGravity: 20

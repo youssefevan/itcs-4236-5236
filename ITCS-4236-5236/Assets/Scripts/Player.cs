@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     [Header("Movement")]
     public float maxSpeed = 5f;
     public float jumpForce = 10f;
-    public float airFriction = 20f;
+    public float airFriction = 10f;
     public float groundFriction = 20f;
     public float upGravity = 10f;
     public float downGravity = 20f;
