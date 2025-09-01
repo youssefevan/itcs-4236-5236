@@ -53,7 +53,8 @@ public class Player : MonoBehaviour
         return Physics2D.OverlapBox(groundCheckPosition.position, groundCheckSize, 0, groundLayer);
     }
 
-    private void OnDrawGizmosSelected() {
+    private void OnDrawGizmosSelected()
+    {
         Gizmos.color = Color.white;
         Gizmos.DrawCube(groundCheckPosition.position, groundCheckSize);
     }

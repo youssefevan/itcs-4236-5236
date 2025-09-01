@@ -14,12 +14,12 @@ public abstract class State
         player = p;
     }
 
-    public virtual void Enter() {}
+    public virtual void Enter() { }
 
     public virtual State? PhysicsUpdate()
     {
         return null;
     }
 
-    public virtual void Exit() {}
+    public virtual void Exit() { }
 }

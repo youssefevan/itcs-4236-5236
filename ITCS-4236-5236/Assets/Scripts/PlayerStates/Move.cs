@@ -33,7 +33,7 @@ public class Move : State
 
         if (player.jumpInput)
         {
-            return states["jump"];
+            return states["jumpsquat"];
         }
 
         return null;

@@ -25,10 +25,10 @@ public class Fall : State
 
         if (player.isGrounded())
         {
-            return states["idle"];
+            return states["land"];
         }
 
         return null;
     }
-    
+
 }

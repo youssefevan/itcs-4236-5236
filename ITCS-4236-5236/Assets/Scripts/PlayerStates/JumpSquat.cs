@@ -1,15 +1,21 @@
 using UnityEngine;
 
-public class Idle : State
+public class JumpSquat : State
 {
+    float currentTime = 0;
+    float targetTime = 0.05f; // 3 frames at 60 fps
+
     public override void Enter()
     {
-        Debug.Log("idle");
+        Debug.Log("jumpsquat");
+        currentTime = 0;
     }
 
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
+
+        currentTime += Time.fixedDeltaTime;
 
         Vector2 velocity = player.rb.linearVelocity;
 
@@ -26,17 +32,11 @@ public class Idle : State
             return states["fall"];
         }
 
-        if (player.hInput != 0f)
+        if (currentTime >= targetTime)
         {
-            return states["move"];
-        }
-
-        if (player.jumpInput)
-        {
-            return states["jumpsquat"];
+            return states["jump"];
         }
 
         return null;
     }
-
 }
