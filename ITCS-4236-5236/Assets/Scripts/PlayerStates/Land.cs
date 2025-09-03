@@ -44,6 +44,10 @@ public class Land : State
             {
                 return states["jumpsquat"];
             }
+            else if (player.crouchInput)
+            {
+                return states["crouch"];
+            }
             else
             {
                 return states["idle"];

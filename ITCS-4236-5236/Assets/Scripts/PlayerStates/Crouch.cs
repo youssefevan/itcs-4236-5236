@@ -1,11 +1,11 @@
 using UnityEngine;
 
-public class Move : State
+public class Crouch : State
 {
     public override void Enter()
     {
-        Debug.Log("move");
-        player.animator.Play("Move");
+        Debug.Log("crouch");
+        player.animator.Play("Crouch");
     }
 
     public override State? PhysicsUpdate()
@@ -15,7 +15,7 @@ public class Move : State
         Vector2 velocity = player.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
-            velocity.x, player.hInput * player.maxSpeed,
+            velocity.x, 0f,
             player.groundFriction * Time.fixedDeltaTime
         );
         velocity.y = -1f;
@@ -27,7 +27,7 @@ public class Move : State
             return states["fall"];
         }
 
-        if (player.hInput == 0f)
+        if (!player.crouchInput)
         {
             return states["idle"];
         }
@@ -37,16 +37,7 @@ public class Move : State
             return states["jumpsquat"];
         }
 
-        if (player.blockInput)
-        {
-            return states["block"];
-        }
-
-        if (player.crouchInput)
-        {
-            return states["crouch"];
-        }
-
         return null;
     }
+
 }

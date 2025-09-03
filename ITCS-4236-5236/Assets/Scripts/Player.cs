@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
     [Header("Input")]
     public float hInput;
     public bool jumpInput;
+    public bool blockInput;
+    public bool crouchInput;
 
     [Header("Movement")]
     public float maxSpeed = 5f;
@@ -42,12 +44,22 @@ public class Player : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        hInput = context.ReadValue<Vector2>().x;
+        hInput = context.ReadValue<float>();
     }
 
     public void Jump(InputAction.CallbackContext context)
     {
         jumpInput = context.performed;
+    }
+
+    public void Block(InputAction.CallbackContext context)
+    {
+        blockInput = context.performed;
+    }
+
+    public void Crouch(InputAction.CallbackContext context)
+    {
+        crouchInput = context.performed;
     }
 
     public bool isGrounded()

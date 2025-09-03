@@ -15,6 +15,8 @@ public class StateManager : MonoBehaviour
         State jump = new Jump();
         State land = new Land();
         State jumpsquat = new JumpSquat();
+        State block = new Block();
+        State crouch = new Crouch();
 
         states.Add("idle", idle);
         states.Add("fall", fall);
@@ -22,6 +24,8 @@ public class StateManager : MonoBehaviour
         states.Add("jump", jump);
         states.Add("land", land);
         states.Add("jumpsquat", jumpsquat);
+        states.Add("block", block);
+        states.Add("crouch", crouch);
 
         foreach (var state in states.Values)
         {

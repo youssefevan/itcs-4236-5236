@@ -37,6 +37,16 @@ public class Idle : State
             return states["jumpsquat"];
         }
 
+        if (player.blockInput)
+        {
+            return states["block"];
+        }
+
+        if (player.crouchInput)
+        {
+            return states["crouch"];
+        }
+
         return null;
     }
 
