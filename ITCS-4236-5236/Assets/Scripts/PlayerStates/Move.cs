@@ -5,6 +5,7 @@ public class Move : State
     public override void Enter()
     {
         Debug.Log("move");
+        player.animator.Play("Move");
     }
 
     public override State? PhysicsUpdate()

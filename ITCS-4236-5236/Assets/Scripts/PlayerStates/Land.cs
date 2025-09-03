@@ -5,12 +5,16 @@ using System.Collections;
 public class Land : State
 {
     float currentTime = 0;
-    float targetTime = 0.05f; // 3 frames at 60 fps
+    float targetTime = (4f / 60f); // 4 frames at 60 fps
+
+    bool jumpQueued = false;
 
     public override void Enter()
     {
         Debug.Log("land");
+        player.animator.Play("Land");
         currentTime = 0;
+        jumpQueued = false;
     }
 
     public override State? PhysicsUpdate()
@@ -36,7 +40,20 @@ public class Land : State
 
         if (currentTime >= targetTime)
         {
-            return states["idle"];
+            if (jumpQueued)
+            {
+                return states["jumpsquat"];
+            }
+            else
+            {
+                return states["idle"];
+            }
+        }
+
+        // buffer jump
+        if (player.jumpInput)
+        {
+            jumpQueued = true;
         }
 
         return null;

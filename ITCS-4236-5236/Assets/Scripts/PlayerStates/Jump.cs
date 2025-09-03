@@ -6,6 +6,7 @@ public class Jump : State
     public override void Enter()
     {
         Debug.Log("jump");
+        player.animator.Play("Jump");
 
         velocity = player.rb.linearVelocity;
         velocity.y += player.jumpForce;
@@ -23,7 +24,7 @@ public class Jump : State
             player.airFriction * Time.fixedDeltaTime
         );
 
-       velocity.y -= player.upGravity * Time.fixedDeltaTime;
+        velocity.y -= player.upGravity * Time.fixedDeltaTime;
 
         player.rb.linearVelocity = velocity;
 

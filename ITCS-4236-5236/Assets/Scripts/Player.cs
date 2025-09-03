@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
     [Header("Components")]
     public Rigidbody2D rb;
     public StateManager stateManager;
+    public Animator animator;
 
     [Header("Input")]
     public float hInput;
@@ -15,7 +16,7 @@ public class Player : MonoBehaviour
 
     [Header("Movement")]
     public float maxSpeed = 5f;
-    public float jumpForce = 10f;
+    public float jumpForce = 12f;
     public float airFriction = 10f;
     public float groundFriction = 20f;
     public float upGravity = 10f;
@@ -29,6 +30,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
         stateManager = GetComponent<StateManager>();
         stateManager.Init(this);
     }

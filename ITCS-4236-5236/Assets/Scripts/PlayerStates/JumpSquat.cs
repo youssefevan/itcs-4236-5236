@@ -8,6 +8,7 @@ public class JumpSquat : State
     public override void Enter()
     {
         Debug.Log("jumpsquat");
+        player.animator.Play("JumpSquat");
         currentTime = 0;
     }
 
@@ -21,7 +22,7 @@ public class JumpSquat : State
 
         velocity.x = Mathf.Lerp(
             velocity.x, 0f,
-            player.groundFriction * Time.fixedDeltaTime
+            (player.groundFriction / 3) * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 

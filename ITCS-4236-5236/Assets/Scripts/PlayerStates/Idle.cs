@@ -5,6 +5,7 @@ public class Idle : State
     public override void Enter()
     {
         Debug.Log("idle");
+        player.animator.Play("Idle");
     }
 
     public override State? PhysicsUpdate()

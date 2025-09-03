@@ -6,6 +6,7 @@ public class Fall : State
     public override void Enter()
     {
         Debug.Log("fall");
+        player.animator.Play("Fall");
     }
 
     public override State? PhysicsUpdate()
