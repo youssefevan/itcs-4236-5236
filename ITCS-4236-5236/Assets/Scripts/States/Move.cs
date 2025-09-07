@@ -5,44 +5,44 @@ public class Move : State
     public override void Enter()
     {
         Debug.Log("move");
-        player.animator.Play("Move");
+        fighter.animator.Play("Move");
     }
 
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
 
-        Vector2 velocity = player.rb.linearVelocity;
+        Vector2 velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
-            velocity.x, player.hInput * player.maxSpeed,
-            player.groundFriction * Time.fixedDeltaTime
+            velocity.x, fighter.moveInput * fighter.maxSpeed,
+            fighter.groundFriction * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 
-        player.rb.linearVelocity = velocity;
+        fighter.rb.linearVelocity = velocity;
 
-        if (!player.isGrounded())
+        if (!fighter.isGrounded())
         {
             return states["fall"];
         }
 
-        if (player.hInput == 0f)
+        if (fighter.moveInput == 0f)
         {
             return states["idle"];
         }
 
-        if (player.jumpInput)
+        if (fighter.jumpInput)
         {
             return states["jumpsquat"];
         }
 
-        if (player.blockInput)
+        if (fighter.blockInput)
         {
             return states["block"];
         }
 
-        if (player.crouchInput)
+        if (fighter.crouchInput)
         {
             return states["crouch"];
         }

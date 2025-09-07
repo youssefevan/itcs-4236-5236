@@ -8,7 +8,7 @@ public class JumpSquat : State
     public override void Enter()
     {
         Debug.Log("jumpsquat");
-        player.animator.Play("JumpSquat");
+        fighter.animator.Play("JumpSquat");
         currentTime = 0;
     }
 
@@ -18,17 +18,17 @@ public class JumpSquat : State
 
         currentTime += Time.fixedDeltaTime;
 
-        Vector2 velocity = player.rb.linearVelocity;
+        Vector2 velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
             velocity.x, 0f,
-            (player.groundFriction / 3) * Time.fixedDeltaTime
+            (fighter.groundFriction / 3) * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 
-        player.rb.linearVelocity = velocity;
+        fighter.rb.linearVelocity = velocity;
 
-        if (!player.isGrounded())
+        if (!fighter.isGrounded())
         {
             return states["fall"];
         }

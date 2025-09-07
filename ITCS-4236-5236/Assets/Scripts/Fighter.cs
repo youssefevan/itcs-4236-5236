@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Player : MonoBehaviour
+public class Fighter : MonoBehaviour
 {
     [Header("Components")]
     public Rigidbody2D rb;
@@ -11,18 +11,21 @@ public class Player : MonoBehaviour
     public Animator animator;
 
     [Header("Input")]
-    public float hInput;
+    public float moveInput;
     public bool jumpInput;
     public bool blockInput;
     public bool crouchInput;
+    public Vector2 aimInput;
+    public bool punchInput;
+    public bool kickInput;
 
     [Header("Movement")]
-    public float maxSpeed = 5f;
-    public float jumpForce = 12f;
+    public float maxSpeed = 8f;
+    public float jumpForce = 16f;
     public float airFriction = 10f;
     public float groundFriction = 20f;
-    public float upGravity = 10f;
-    public float downGravity = 20f;
+    public float upGravity = 30f;
+    public float downGravity = 60f;
 
     [Header("GroundCheck")]
     public LayerMask groundLayer;
@@ -44,7 +47,12 @@ public class Player : MonoBehaviour
 
     public void Move(InputAction.CallbackContext context)
     {
-        hInput = context.ReadValue<float>();
+        moveInput = context.ReadValue<float>();
+    }
+
+    public void Aim(InputAction.CallbackContext context)
+    {
+        aimInput = context.ReadValue<Vector2>();
     }
 
     public void Jump(InputAction.CallbackContext context)
@@ -60,6 +68,16 @@ public class Player : MonoBehaviour
     public void Crouch(InputAction.CallbackContext context)
     {
         crouchInput = context.performed;
+    }
+
+    public void Punch(InputAction.CallbackContext context)
+    {
+        punchInput = context.performed;
+    }
+
+    public void Kick(InputAction.CallbackContext context)
+    {
+        kickInput = context.performed;
     }
 
     public bool isGrounded()

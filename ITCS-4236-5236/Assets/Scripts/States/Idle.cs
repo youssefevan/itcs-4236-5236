@@ -5,44 +5,49 @@ public class Idle : State
     public override void Enter()
     {
         Debug.Log("idle");
-        player.animator.Play("Idle");
+        fighter.animator.Play("Idle");
     }
 
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
 
-        Vector2 velocity = player.rb.linearVelocity;
+        Vector2 velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
             velocity.x, 0f,
-            player.groundFriction * Time.fixedDeltaTime
+            fighter.groundFriction * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 
-        player.rb.linearVelocity = velocity;
+        fighter.rb.linearVelocity = velocity;
 
-        if (!player.isGrounded())
+        return handleTransitions();
+    }
+
+    State? handleTransitions()
+    {
+        if (!fighter.isGrounded())
         {
             return states["fall"];
         }
 
-        if (player.hInput != 0f)
+        if (fighter.moveInput != 0f)
         {
             return states["move"];
         }
 
-        if (player.jumpInput)
+        if (fighter.jumpInput)
         {
             return states["jumpsquat"];
         }
 
-        if (player.blockInput)
+        if (fighter.blockInput)
         {
             return states["block"];
         }
 
-        if (player.crouchInput)
+        if (fighter.crouchInput)
         {
             return states["crouch"];
         }

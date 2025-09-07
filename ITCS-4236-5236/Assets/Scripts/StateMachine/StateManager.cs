@@ -6,7 +6,7 @@ public class StateManager : MonoBehaviour
     public Dictionary<string, State> states = new Dictionary<string, State>();
     private State currentState;
 
-    public void Init(Player player)
+    public void Init(Fighter fighter)
     {
         // this is bad. will clean up "eventually"
         State idle = new Idle();
@@ -29,7 +29,7 @@ public class StateManager : MonoBehaviour
 
         foreach (var state in states.Values)
         {
-            state.Init(this, states, player);
+            state.Init(this, states, fighter);
         }
 
         currentState = states["idle"];

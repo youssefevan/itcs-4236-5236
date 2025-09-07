@@ -12,7 +12,7 @@ public class Land : State
     public override void Enter()
     {
         Debug.Log("land");
-        player.animator.Play("Land");
+        fighter.animator.Play("Land");
         currentTime = 0;
         jumpQueued = false;
     }
@@ -23,17 +23,17 @@ public class Land : State
 
         currentTime += Time.fixedDeltaTime;
 
-        Vector2 velocity = player.rb.linearVelocity;
+        Vector2 velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
             velocity.x, 0f,
-            player.groundFriction * Time.fixedDeltaTime
+            fighter.groundFriction * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 
-        player.rb.linearVelocity = velocity;
+        fighter.rb.linearVelocity = velocity;
 
-        if (!player.isGrounded())
+        if (!fighter.isGrounded())
         {
             return states["fall"];
         }
@@ -44,7 +44,7 @@ public class Land : State
             {
                 return states["jumpsquat"];
             }
-            else if (player.crouchInput)
+            else if (fighter.crouchInput)
             {
                 return states["crouch"];
             }
@@ -55,7 +55,7 @@ public class Land : State
         }
 
         // buffer jump
-        if (player.jumpInput)
+        if (fighter.jumpInput)
         {
             jumpQueued = true;
         }

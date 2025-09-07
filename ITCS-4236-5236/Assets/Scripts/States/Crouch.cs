@@ -1,38 +1,38 @@
 using UnityEngine;
 
-public class Block : State
+public class Crouch : State
 {
     public override void Enter()
     {
-        Debug.Log("block");
-        player.animator.Play("Block");
+        Debug.Log("crouch");
+        fighter.animator.Play("Crouch");
     }
 
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
 
-        Vector2 velocity = player.rb.linearVelocity;
+        Vector2 velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
             velocity.x, 0f,
-            player.groundFriction * Time.fixedDeltaTime
+            fighter.groundFriction * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 
-        player.rb.linearVelocity = velocity;
+        fighter.rb.linearVelocity = velocity;
 
-        if (!player.isGrounded())
+        if (!fighter.isGrounded())
         {
             return states["fall"];
         }
 
-        if (!player.blockInput)
+        if (!fighter.crouchInput)
         {
             return states["idle"];
         }
 
-        if (player.jumpInput)
+        if (fighter.jumpInput)
         {
             return states["jumpsquat"];
         }

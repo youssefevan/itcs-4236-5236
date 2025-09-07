@@ -5,13 +5,13 @@ public abstract class State
 {
     protected StateManager manager;
     protected Dictionary<string, State> states;
-    protected Player player;
+    protected Fighter fighter;
 
-    public void Init(StateManager sm, Dictionary<string, State> s, Player p)
+    public void Init(StateManager sm, Dictionary<string, State> s, Fighter f)
     {
         manager = sm;
         states = s;
-        player = p;
+        fighter = f;
     }
 
     public virtual void Enter() { }
