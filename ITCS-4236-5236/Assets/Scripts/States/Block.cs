@@ -22,17 +22,17 @@ public class Block : State
 
         fighter.rb.linearVelocity = velocity;
 
-        if (!fighter.isGrounded())
+        if (!fighter.IsGrounded())
         {
             return states["fall"];
         }
 
-        if (!fighter.blockInput)
+        if (!fighter.inputType.blockInput)
         {
             return states["idle"];
         }
 
-        if (fighter.jumpInput)
+        if (fighter.inputType.jumpInput)
         {
             return states["jumpsquat"];
         }

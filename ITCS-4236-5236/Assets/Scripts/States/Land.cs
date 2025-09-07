@@ -33,7 +33,7 @@ public class Land : State
 
         fighter.rb.linearVelocity = velocity;
 
-        if (!fighter.isGrounded())
+        if (!fighter.IsGrounded())
         {
             return states["fall"];
         }
@@ -44,7 +44,7 @@ public class Land : State
             {
                 return states["jumpsquat"];
             }
-            else if (fighter.crouchInput)
+            else if (fighter.inputType.crouchInput)
             {
                 return states["crouch"];
             }
@@ -55,7 +55,7 @@ public class Land : State
         }
 
         // buffer jump
-        if (fighter.jumpInput)
+        if (fighter.inputType.jumpInput)
         {
             jumpQueued = true;
         }

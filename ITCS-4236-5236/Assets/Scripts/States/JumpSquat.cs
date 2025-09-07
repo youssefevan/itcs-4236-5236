@@ -28,7 +28,7 @@ public class JumpSquat : State
 
         fighter.rb.linearVelocity = velocity;
 
-        if (!fighter.isGrounded())
+        if (!fighter.IsGrounded())
         {
             return states["fall"];
         }

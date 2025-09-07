@@ -16,7 +16,7 @@ public class Fall : State
         Vector2 velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
-            velocity.x, fighter.moveInput * fighter.maxSpeed,
+            velocity.x, fighter.inputType.moveInput * fighter.maxSpeed,
             fighter.airFriction * Time.fixedDeltaTime
         );
 
@@ -24,7 +24,7 @@ public class Fall : State
 
         fighter.rb.linearVelocity = velocity;
 
-        if (fighter.isGrounded())
+        if (fighter.IsGrounded())
         {
             return states["land"];
         }

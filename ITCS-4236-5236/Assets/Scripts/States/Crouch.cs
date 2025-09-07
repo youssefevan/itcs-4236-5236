@@ -22,17 +22,17 @@ public class Crouch : State
 
         fighter.rb.linearVelocity = velocity;
 
-        if (!fighter.isGrounded())
+        if (!fighter.IsGrounded())
         {
             return states["fall"];
         }
 
-        if (!fighter.crouchInput)
+        if (!fighter.inputType.crouchInput)
         {
             return states["idle"];
         }
 
-        if (fighter.jumpInput)
+        if (fighter.inputType.jumpInput)
         {
             return states["jumpsquat"];
         }

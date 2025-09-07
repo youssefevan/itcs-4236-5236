@@ -1,33 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class Fighter : MonoBehaviour
 {
     [Header("Components")]
-    public Rigidbody2D rb;
-    public StateManager stateManager;
-    public Animator animator;
+    [HideInInspector] public Rigidbody2D rb;
+    [HideInInspector] public StateManager stateManager;
+    [HideInInspector] public Animator animator;
 
-    [Header("Input")]
-    public float moveInput;
-    public bool jumpInput;
-    public bool blockInput;
-    public bool crouchInput;
-    public Vector2 aimInput;
-    public bool punchInput;
-    public bool kickInput;
+    [Header("---Input---")]
+    public IFighterInput inputType { get; set; }
+    public bool aiControlled;
 
     [Header("Movement")]
-    public float maxSpeed = 8f;
-    public float jumpForce = 16f;
-    public float airFriction = 10f;
-    public float groundFriction = 20f;
-    public float upGravity = 30f;
-    public float downGravity = 60f;
+    [HideInInspector] public float maxSpeed = 8f;
+    [HideInInspector] public float jumpForce = 16f;
+    [HideInInspector] public float airFriction = 10f;
+    [HideInInspector] public float groundFriction = 20f;
+    [HideInInspector] public float upGravity = 30f;
+    [HideInInspector] public float downGravity = 60f;
 
-    [Header("GroundCheck")]
+    [Header("---Ground Check---")]
     public LayerMask groundLayer;
     public Transform groundCheckPosition;
     public Vector2 groundCheckSize = new Vector2(0.1f, 0.05f);
@@ -38,6 +32,16 @@ public class Fighter : MonoBehaviour
         animator = GetComponent<Animator>();
         stateManager = GetComponent<StateManager>();
         stateManager.Init(this);
+
+        if (aiControlled)
+        {
+            inputType = GetComponent<AIInputController>();
+        }
+        else
+        {
+            inputType = GetComponent<PlayerInputController>();
+        }
+
     }
 
     void FixedUpdate()
@@ -45,42 +49,7 @@ public class Fighter : MonoBehaviour
         stateManager.PhysicsUpdate();
     }
 
-    public void Move(InputAction.CallbackContext context)
-    {
-        moveInput = context.ReadValue<float>();
-    }
-
-    public void Aim(InputAction.CallbackContext context)
-    {
-        aimInput = context.ReadValue<Vector2>();
-    }
-
-    public void Jump(InputAction.CallbackContext context)
-    {
-        jumpInput = context.performed;
-    }
-
-    public void Block(InputAction.CallbackContext context)
-    {
-        blockInput = context.performed;
-    }
-
-    public void Crouch(InputAction.CallbackContext context)
-    {
-        crouchInput = context.performed;
-    }
-
-    public void Punch(InputAction.CallbackContext context)
-    {
-        punchInput = context.performed;
-    }
-
-    public void Kick(InputAction.CallbackContext context)
-    {
-        kickInput = context.performed;
-    }
-
-    public bool isGrounded()
+    public bool IsGrounded()
     {
         return Physics2D.OverlapBox(groundCheckPosition.position, groundCheckSize, 0, groundLayer);
     }

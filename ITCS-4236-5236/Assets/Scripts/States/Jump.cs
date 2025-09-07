@@ -20,7 +20,7 @@ public class Jump : State
         velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
-            velocity.x, fighter.moveInput * fighter.maxSpeed,
+            velocity.x, fighter.inputType.moveInput * fighter.maxSpeed,
             fighter.airFriction * Time.fixedDeltaTime
         );
 
@@ -28,7 +28,7 @@ public class Jump : State
 
         fighter.rb.linearVelocity = velocity;
 
-        if (fighter.isGrounded())
+        if (fighter.IsGrounded())
         {
             return states["idle"];
         }

@@ -15,34 +15,34 @@ public class Move : State
         Vector2 velocity = fighter.rb.linearVelocity;
 
         velocity.x = Mathf.Lerp(
-            velocity.x, fighter.moveInput * fighter.maxSpeed,
+            velocity.x, fighter.inputType.moveInput * fighter.maxSpeed,
             fighter.groundFriction * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 
         fighter.rb.linearVelocity = velocity;
 
-        if (!fighter.isGrounded())
+        if (!fighter.IsGrounded())
         {
             return states["fall"];
         }
 
-        if (fighter.moveInput == 0f)
+        if (fighter.inputType.moveInput == 0f)
         {
             return states["idle"];
         }
 
-        if (fighter.jumpInput)
+        if (fighter.inputType.jumpInput)
         {
             return states["jumpsquat"];
         }
 
-        if (fighter.blockInput)
+        if (fighter.inputType.blockInput)
         {
             return states["block"];
         }
 
-        if (fighter.crouchInput)
+        if (fighter.inputType.crouchInput)
         {
             return states["crouch"];
         }
