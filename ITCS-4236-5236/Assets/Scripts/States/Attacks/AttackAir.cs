@@ -23,7 +23,7 @@ public class AttackAir : Attack
         {
             velocity.x = Mathf.Lerp(
                 velocity.x, 0f,
-                fighter.groundFriction * Time.fixedDeltaTime
+                fighter.airFriction * Time.fixedDeltaTime
             );
             velocity.y = -1f;
         }
@@ -36,5 +36,18 @@ public class AttackAir : Attack
         }
 
         return null;
+    }
+
+    public override void ApplyVelocity()
+    {
+        base.ApplyVelocity();
+        Vector2 velocity = fighter.rb.linearVelocity;
+
+        if (velocity_type == 1)
+        {
+            velocity = velocity_modifier * fighter.facing;
+        }
+
+        fighter.rb.linearVelocity = velocity;
     }
 }

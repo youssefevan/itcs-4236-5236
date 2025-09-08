@@ -22,6 +22,19 @@ public class Fall : State
             return states["land"];
         }
 
+        if (fighter.inputType.kickInput)
+        {
+            switch (fighter.inputType.aimInput)
+            {
+                case 1:
+                    break;
+                case 0:
+                    break;
+                case -1:
+                    return states["kickAirDown"];
+            }
+        }
+
         return null;
     }
 

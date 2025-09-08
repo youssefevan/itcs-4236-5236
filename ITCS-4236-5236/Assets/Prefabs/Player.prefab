@@ -217,6 +217,7 @@ MonoBehaviour:
   groundFriction: 20
   upGravity: 30
   downGravity: 60
+  facing: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
