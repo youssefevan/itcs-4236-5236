@@ -14,9 +14,13 @@ public class StateManager : MonoBehaviour
         State move = new Move();
         State jump = new Jump();
         State land = new Land();
-        State jumpsquat = new JumpSquat();
+        State jumpsquat = new Jumpsquat();
         State block = new Block();
         State crouch = new Crouch();
+        AttackGround kickGroundNeutral = new AttackGround();
+        kickGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(50, -1), 1);
+        AttackGround punchGroundNeutral = new AttackGround();
+        punchGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(25, 0), 3);
 
         states.Add("idle", idle);
         states.Add("fall", fall);
@@ -26,10 +30,12 @@ public class StateManager : MonoBehaviour
         states.Add("jumpsquat", jumpsquat);
         states.Add("block", block);
         states.Add("crouch", crouch);
+        states.Add("kickGroundNeutral", kickGroundNeutral);
+        states.Add("punchGroundNeutral", punchGroundNeutral);
 
-        foreach (var state in states.Values)
+        foreach (KeyValuePair<string, State> state in states)
         {
-            state.Init(this, states, fighter);
+            state.Value.Init(this, states, fighter, state.Key);
         }
 
         currentState = states["idle"];
@@ -43,7 +49,6 @@ public class StateManager : MonoBehaviour
         {
             ChangeState(newState);
         }
-
     }
 
     public void ChangeState(State newState)

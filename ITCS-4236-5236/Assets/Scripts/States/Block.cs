@@ -2,12 +2,6 @@ using UnityEngine;
 
 public class Block : State
 {
-    public override void Enter()
-    {
-        Debug.Log("block");
-        fighter.animator.Play("Block");
-    }
-
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();

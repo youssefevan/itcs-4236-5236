@@ -2,12 +2,6 @@ using UnityEngine;
 
 public class Idle : State
 {
-    public override void Enter()
-    {
-        Debug.Log("idle");
-        fighter.animator.Play("Idle");
-    }
-
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
@@ -50,6 +44,32 @@ public class Idle : State
         if (fighter.inputType.crouchInput)
         {
             return states["crouch"];
+        }
+
+        if (fighter.inputType.kickInput)
+        {
+            switch (fighter.inputType.aimInput)
+            {
+                case 1:
+                    break;
+                case 0:
+                    return states["kickGroundNeutral"];
+                case -1:
+                    break;
+            }
+        }
+
+        if (fighter.inputType.punchInput)
+        {
+            switch (fighter.inputType.aimInput)
+            {
+                case 1:
+                    break;
+                case 0:
+                    return states["punchGroundNeutral"];
+                case -1:
+                    break;
+            }
         }
 
         return null;

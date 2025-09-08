@@ -2,13 +2,6 @@ using UnityEngine;
 
 public class Fall : State
 {
-
-    public override void Enter()
-    {
-        Debug.Log("fall");
-        fighter.animator.Play("Fall");
-    }
-
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();

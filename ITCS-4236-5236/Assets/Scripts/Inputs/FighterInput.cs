@@ -1,8 +1,7 @@
-using UnityEngine;
 public interface IFighterInput
 {
     float moveInput { get; }
-    Vector2 aimInput { get; }
+    float aimInput { get; }
     bool jumpInput { get; }
     bool crouchInput { get; }
     bool blockInput { get; }

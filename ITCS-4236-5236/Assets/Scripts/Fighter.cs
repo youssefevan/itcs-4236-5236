@@ -12,6 +12,7 @@ public class Fighter : MonoBehaviour
     [Header("---Input---")]
     public IFighterInput inputType { get; set; }
     public bool aiControlled;
+    [HideInInspector] public bool attackCompleted = false;
 
     [Header("Movement")]
     [HideInInspector] public float maxSpeed = 8f;
@@ -20,6 +21,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float groundFriction = 20f;
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
+    [HideInInspector] public float facing = 1f;
 
     [Header("---Ground Check---")]
     public LayerMask groundLayer;
@@ -47,11 +49,58 @@ public class Fighter : MonoBehaviour
     void FixedUpdate()
     {
         stateManager.PhysicsUpdate();
+
+        /*if (inputType.moveInput != 0)
+        {
+            if (inputType.moveInput > 0)
+            {
+                facing = 1;
+            }
+            else if (inputType.moveInput < 0)
+            {
+                facing = -1;
+            }
+        }*/
     }
 
     public bool IsGrounded()
     {
         return Physics2D.OverlapBox(groundCheckPosition.position, groundCheckSize, 0, groundLayer);
+    }
+
+    public void AttackCompleted()
+    {
+        stateManager.ChangeState(stateManager.states["idle"]);
+    }
+
+    public void ApplyAttackVelocity()
+    {
+        State currentState = stateManager.GetCurrentState();
+
+        if (currentState is Attack attack)
+        {
+            attack.ApplyVelocity();
+        }
+    }
+
+    public void StartModifyingVelocity()
+    {
+        State currentState = stateManager.GetCurrentState();
+
+        if (currentState is Attack attack)
+        {
+            attack.modifyingVelocity = true;
+        }
+    }
+
+    public void EndModifyingVelocity()
+    {
+        State currentState = stateManager.GetCurrentState();
+
+        if (currentState is Attack attack)
+        {
+            attack.modifyingVelocity = false;
+        }
     }
 
     private void OnDrawGizmosSelected()

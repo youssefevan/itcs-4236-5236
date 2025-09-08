@@ -2,12 +2,6 @@ using UnityEngine;
 
 public class Move : State
 {
-    public override void Enter()
-    {
-        Debug.Log("move");
-        fighter.animator.Play("Move");
-    }
-
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
@@ -45,6 +39,32 @@ public class Move : State
         if (fighter.inputType.crouchInput)
         {
             return states["crouch"];
+        }
+
+        if (fighter.inputType.kickInput)
+        {
+            switch (fighter.inputType.aimInput)
+            {
+                case 1:
+                    break;
+                case 0:
+                    return states["kickGroundNeutral"];
+                case -1:
+                    break;
+            }
+        }
+
+        if (fighter.inputType.punchInput)
+        {
+            switch (fighter.inputType.aimInput)
+            {
+                case 1:
+                    break;
+                case 0:
+                    return states["punchGroundNeutral"];
+                case -1:
+                    break;
+            }
         }
 
         return null;

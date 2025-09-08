@@ -11,8 +11,7 @@ public class Land : State
 
     public override void Enter()
     {
-        Debug.Log("land");
-        fighter.animator.Play("Land");
+        base.Enter();
         currentTime = 0;
         jumpQueued = false;
     }

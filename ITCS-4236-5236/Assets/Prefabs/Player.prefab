@@ -210,6 +210,7 @@ MonoBehaviour:
   stateManager: {fileID: 0}
   animator: {fileID: 0}
   aiControlled: 0
+  attackCompleted: 0
   maxSpeed: 8
   jumpForce: 16
   airFriction: 10
@@ -350,22 +351,6 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1287399024013401653}
         m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
-        m_MethodName: Aim
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 5d0689e8-1bc2-429c-8e30-83d6cb98dc33
-    m_ActionName: 'Player/Aim[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1287399024013401653}
-        m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
         m_MethodName: Punch
         m_Mode: 0
         m_Arguments:
@@ -434,6 +419,22 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 9caa3d8a-6b2f-4e8e-8bad-6ede561bd9be
     m_ActionName: UI/TrackedDeviceOrientation
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1287399024013401653}
+        m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+        m_MethodName: Aim
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 2efbe67c-c9ab-41fa-9602-52ebb3736a51
+    m_ActionName: 'Player/Aim[/Keyboard/s,/Keyboard/w]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

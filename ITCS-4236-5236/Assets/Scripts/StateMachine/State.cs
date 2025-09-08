@@ -6,20 +6,23 @@ public abstract class State
     protected StateManager manager;
     protected Dictionary<string, State> states;
     protected Fighter fighter;
+    protected string name;
 
-    public void Init(StateManager sm, Dictionary<string, State> s, Fighter f)
+    public void Init(StateManager sm, Dictionary<string, State> s, Fighter f, string n)
     {
         manager = sm;
         states = s;
         fighter = f;
+        name = n;
     }
 
-    public virtual void Enter() { }
-
-    public virtual State? PhysicsUpdate()
+    public virtual void Enter()
     {
-        return null;
+        fighter.animator.Play(name);
+        fighter.attackCompleted = false;
     }
+
+    public virtual State? PhysicsUpdate() { return null; }
 
     public virtual void Exit() { }
 }

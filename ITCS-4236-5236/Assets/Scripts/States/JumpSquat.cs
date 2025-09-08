@@ -1,14 +1,13 @@
 using UnityEngine;
 
-public class JumpSquat : State
+public class Jumpsquat : State
 {
     float currentTime = 0;
     float targetTime = 0.05f; // 3 frames at 60 fps
 
     public override void Enter()
     {
-        Debug.Log("jumpsquat");
-        fighter.animator.Play("JumpSquat");
+        base.Enter();
         currentTime = 0;
     }
 

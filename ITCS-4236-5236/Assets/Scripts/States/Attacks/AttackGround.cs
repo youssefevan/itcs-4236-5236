@@ -8,13 +8,16 @@ public class AttackGround : Attack
 
         Vector2 velocity = fighter.rb.linearVelocity;
 
-        if (velocity_type == 2) // addititve
+        if (modifyingVelocity)
         {
-            velocity += velocity_modifier * Time.fixedDeltaTime;
-        }
-        else if (velocity_type == 3) // set (linear)
-        {
-            velocity = velocity_modifier * Time.fixedDeltaTime;
+            if (velocity_type == 2) // addititve
+            {
+                velocity += velocity_modifier * fighter.facing;
+            }
+            else if (velocity_type == 3) // set (linear)
+            {
+                velocity = velocity_modifier * fighter.facing;
+            }
         }
         else
         {
@@ -29,4 +32,18 @@ public class AttackGround : Attack
 
         return null;
     }
+
+    public override void ApplyVelocity()
+    {
+        base.ApplyVelocity();
+        Vector2 velocity = fighter.rb.linearVelocity;
+
+        if (velocity_type == 1)
+        {
+            velocity = velocity_modifier * fighter.facing;
+        }
+
+        fighter.rb.linearVelocity = velocity;
+    }
+
 }

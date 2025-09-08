@@ -8,24 +8,32 @@ public class AttackAir : Attack
 
         Vector2 velocity = fighter.rb.linearVelocity;
 
-        if (velocity_type == 2) // addititve
+        if (modifyingVelocity)
         {
-            velocity += velocity_modifier * Time.fixedDeltaTime;
-        }
-        else if (velocity_type == 3) // set (linear)
-        {
-            velocity = velocity_modifier * Time.fixedDeltaTime;
+            if (velocity_type == 2) // addititve
+            {
+                velocity += velocity_modifier * fighter.facing;
+            }
+            else if (velocity_type == 3) // set (linear)
+            {
+                velocity = velocity_modifier * fighter.facing;
+            }
         }
         else
         {
             velocity.x = Mathf.Lerp(
                 velocity.x, 0f,
-                fighter.airFriction * Time.fixedDeltaTime
+                fighter.groundFriction * Time.fixedDeltaTime
             );
             velocity.y = -1f;
         }
 
         fighter.rb.linearVelocity = velocity;
+
+        if (fighter.attackCompleted)
+        {
+            return states["idle"];
+        }
 
         return null;
     }

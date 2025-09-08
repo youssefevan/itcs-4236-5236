@@ -5,8 +5,7 @@ public class Jump : State
     Vector2 velocity;
     public override void Enter()
     {
-        Debug.Log("jump");
-        fighter.animator.Play("Jump");
+        base.Enter();
 
         velocity = fighter.rb.linearVelocity;
         velocity.y += fighter.jumpForce;

@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 public class PlayerInputController : MonoBehaviour, IFighterInput
 {
     public float moveInput { get; private set; }
-    public Vector2 aimInput { get; private set; }
+    public float aimInput { get; private set; }
     public bool jumpInput { get; private set; }
     public bool crouchInput { get; private set; }
     public bool blockInput { get; private set; }
@@ -19,7 +19,7 @@ public class PlayerInputController : MonoBehaviour, IFighterInput
 
     public void Aim(InputAction.CallbackContext context)
     {
-        aimInput = context.ReadValue<Vector2>();
+        aimInput = context.ReadValue<float>();
     }
 
     public void Jump(InputAction.CallbackContext context)
