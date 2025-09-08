@@ -20,7 +20,7 @@ public class StateManager : MonoBehaviour
         AttackGround kickGroundNeutral = new AttackGround();
         kickGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(50, -1), 1);
         AttackGround punchGroundNeutral = new AttackGround();
-        punchGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(25, 0), 3);
+        punchGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(30, 0), 3);
 
         states.Add("idle", idle);
         states.Add("fall", fall);
