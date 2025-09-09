@@ -8,6 +8,9 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public StateManager stateManager;
     [HideInInspector] public Animator animator;
+    [HideInInspector] public Transform fighter_transform;
+    public Hitbox hitbox;
+    public Hurtbox hurtbox;
 
     [Header("---Input---")]
     public IFighterInput inputType { get; set; }
@@ -32,6 +35,8 @@ public class Fighter : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        fighter_transform = GetComponent<Transform>();
+
         stateManager = GetComponent<StateManager>();
         stateManager.Init(this);
 
@@ -43,7 +48,6 @@ public class Fighter : MonoBehaviour
         {
             inputType = GetComponent<PlayerInputController>();
         }
-
     }
 
     void FixedUpdate()
@@ -54,13 +58,23 @@ public class Fighter : MonoBehaviour
         {
             if (inputType.moveInput > 0)
             {
+                fighter_transform.localScale = new Vector2(4, 4);
                 facing = 1;
             }
             else if (inputType.moveInput < 0)
             {
+                fighter_transform.localScale = new Vector2(-4, 4);
                 facing = -1;
             }
         }*/
+    }
+
+    public void GetHit(Hitbox hitbox)
+    {
+        Debug.Log(hitbox);
+        Debug.Log(hitbox.damage);
+        Debug.Log(hitbox.knockback_power);
+        Debug.Log(hitbox.knockback_angle);
     }
 
     public bool IsGrounded()

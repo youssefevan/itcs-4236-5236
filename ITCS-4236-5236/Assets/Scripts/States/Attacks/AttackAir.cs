@@ -12,11 +12,11 @@ public class AttackAir : Attack
         {
             if (velocity_type == 2) // addititve
             {
-                velocity += velocity_modifier * fighter.facing;
+                velocity += velocity_modifier;
             }
             else if (velocity_type == 3) // set (linear)
             {
-                velocity = velocity_modifier * fighter.facing;
+                velocity = velocity_modifier;
             }
         }
         else

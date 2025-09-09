@@ -24,9 +24,9 @@ public class Attack : State
     {
         base.Enter();
         modifyingVelocity = false;
-        // play animation (which also sets transform of hitbox)
-        // enable hitbox
-        // set hitbox variables
+        fighter.hitbox.damage = damage;
+        fighter.hitbox.knockback_power = knockback_power;
+        fighter.hitbox.knockback_angle = knockback_angle.normalized;
     }
 
     public virtual void ApplyVelocity() { }
