@@ -6,12 +6,10 @@ public class Hurtbox : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log(other);
-
         Hitbox hitbox = other.GetComponent<Hitbox>();
         if (hitbox != null)
         {
-            fighter.GetHit(hitbox);
+            fighter.RecieveHit(hitbox);
         }
     }
 }

@@ -22,7 +22,14 @@ public abstract class State
         fighter.attackCompleted = false;
     }
 
-    public virtual State? PhysicsUpdate() { return null; }
+    public virtual State? PhysicsUpdate()
+    {
+        if (fighter.inHitStop)
+        {
+            return null;
+        }
+        return null;
+    }
 
     public virtual void Exit() { }
 }

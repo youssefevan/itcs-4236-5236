@@ -8,4 +8,13 @@ public class Hitbox : MonoBehaviour
     [HideInInspector] public int knockback_power;
     [HideInInspector] public Vector2 knockback_angle;
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Hurtbox hurtbox = other.GetComponent<Hurtbox>();
+        if (hurtbox != null)
+        {
+            fighter.PerformHit();
+        }
+    }
+
 }

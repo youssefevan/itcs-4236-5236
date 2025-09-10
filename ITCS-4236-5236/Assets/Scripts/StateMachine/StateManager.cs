@@ -17,6 +17,7 @@ public class StateManager : MonoBehaviour
         State jumpsquat = new Jumpsquat();
         State block = new Block();
         State crouch = new Crouch();
+        State hitstun = new Hitstun();
 
         AttackGround kickGroundNeutral = new AttackGround();
         kickGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(50, -1), 1);
@@ -35,6 +36,8 @@ public class StateManager : MonoBehaviour
         states.Add("jumpsquat", jumpsquat);
         states.Add("block", block);
         states.Add("crouch", crouch);
+        states.Add("hitstun", hitstun);
+
         states.Add("kickGroundNeutral", kickGroundNeutral);
         states.Add("kickAirDown", kickAirDown);
         states.Add("punchGroundNeutral", punchGroundNeutral);

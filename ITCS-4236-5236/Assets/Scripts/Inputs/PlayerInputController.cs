@@ -11,7 +11,6 @@ public class PlayerInputController : MonoBehaviour, IFighterInput
     public bool punchInput { get; private set; }
     public bool kickInput { get; private set; }
 
-
     public void Move(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<float>();

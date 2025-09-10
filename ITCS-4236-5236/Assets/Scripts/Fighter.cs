@@ -16,6 +16,8 @@ public class Fighter : MonoBehaviour
     public IFighterInput inputType { get; set; }
     public bool aiControlled;
     [HideInInspector] public bool attackCompleted = false;
+    [HideInInspector] public bool inHitStop = false;
+    [HideInInspector] public float incomingStun = 0f;
 
     [Header("Movement")]
     [HideInInspector] public float maxSpeed = 8f;
@@ -30,6 +32,7 @@ public class Fighter : MonoBehaviour
     public LayerMask groundLayer;
     public Transform groundCheckPosition;
     public Vector2 groundCheckSize = new Vector2(0.1f, 0.05f);
+
 
     void Start()
     {
@@ -69,12 +72,27 @@ public class Fighter : MonoBehaviour
         }*/
     }
 
-    public void GetHit(Hitbox hitbox)
+    public void RecieveHit(Hitbox hb)
     {
-        Debug.Log(hitbox);
-        Debug.Log(hitbox.damage);
-        Debug.Log(hitbox.knockback_power);
-        Debug.Log(hitbox.knockback_angle);
+        incomingStun = hb.damage * 0.02f;
+        stateManager.ChangeState(stateManager.states["hitstun"]);
+    }
+
+    public void PerformHit()
+    {
+        StartCoroutine(ApplyHitStop(hitbox.damage * 0.01f));
+    }
+
+    private IEnumerator ApplyHitStop(float time)
+    {
+        inHitStop = true;
+        animator.speed = 0;
+        Vector2 cacheVel = rb.linearVelocity;
+        rb.linearVelocity = Vector2.zero;
+        yield return new WaitForSecondsRealtime(time);
+        animator.speed = 1;
+        rb.linearVelocity = cacheVel;
+        inHitStop = false;
     }
 
     public bool IsGrounded()
