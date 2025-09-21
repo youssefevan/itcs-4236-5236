@@ -23,7 +23,7 @@ public class Hitstun : State
 
         if (currentTime >= stunTime)
         {
-            return states["idle"];
+            return states["knockback"];
         }
 
         return null;

@@ -11,6 +11,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public Transform fighter_transform;
     public Hitbox hitbox;
     public Hurtbox hurtbox;
+    public Fighter opponent;
 
     [Header("---Input---")]
     public IFighterInput inputType { get; set; }
@@ -18,6 +19,8 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public bool attackCompleted = false;
     [HideInInspector] public bool inHitStop = false;
     [HideInInspector] public float incomingStun = 0f;
+    [HideInInspector] public Vector2 incomingKBAngle = Vector2.zero;
+    [HideInInspector] public int incomingKBPower = 1;
 
     [Header("Movement")]
     [HideInInspector] public float maxSpeed = 8f;
@@ -34,7 +37,7 @@ public class Fighter : MonoBehaviour
     public Vector2 groundCheckSize = new Vector2(0.1f, 0.05f);
 
 
-    void Start()
+    void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -42,7 +45,10 @@ public class Fighter : MonoBehaviour
 
         stateManager = GetComponent<StateManager>();
         stateManager.Init(this);
+    }
 
+    void Start()
+    {
         if (aiControlled)
         {
             inputType = GetComponent<AIInputController>();
@@ -57,33 +63,48 @@ public class Fighter : MonoBehaviour
     {
         stateManager.PhysicsUpdate();
 
-        /*if (inputType.moveInput != 0)
+        if (opponent)
         {
-            if (inputType.moveInput > 0)
+            if (opponent.transform.position.x - transform.position.x > 0)
             {
                 fighter_transform.localScale = new Vector2(4, 4);
                 facing = 1;
             }
-            else if (inputType.moveInput < 0)
+            else
             {
                 fighter_transform.localScale = new Vector2(-4, 4);
                 facing = -1;
             }
-        }*/
+        }
+
+        if (aiControlled)
+        {
+            ((AIInputController)inputType).SetInputs(0, 0, false, false, true, false, false);
+        }
     }
 
     public void RecieveHit(Hitbox hb)
     {
         incomingStun = hb.damage * 0.02f;
-        stateManager.ChangeState(stateManager.states["hitstun"]);
+        incomingKBAngle = hb.knockback_angle * new Vector2(-facing, 1);
+        incomingKBPower = hb.knockback_power;
+
+        if (stateManager.GetCurrentState() != stateManager.states["block"])
+        {
+            stateManager.ChangeState(stateManager.states["hitstun"]);
+        }
+        else
+        {
+            ((Block)stateManager.GetCurrentState()).BlockHit();
+        }
     }
 
     public void PerformHit()
     {
-        StartCoroutine(ApplyHitStop(hitbox.damage * 0.01f));
+        StartCoroutine(ApplyHitStop(hitbox.knockback_power / 120f));
     }
 
-    private IEnumerator ApplyHitStop(float time)
+    public IEnumerator ApplyHitStop(float time)
     {
         inHitStop = true;
         animator.speed = 0;

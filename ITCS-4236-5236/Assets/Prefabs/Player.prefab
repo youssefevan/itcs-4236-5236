@@ -398,10 +398,13 @@ MonoBehaviour:
   rb: {fileID: 0}
   stateManager: {fileID: 0}
   animator: {fileID: 0}
+  fighter_transform: {fileID: 0}
   hitbox: {fileID: 7372732972929296777}
   hurtbox: {fileID: 7780419273169004902}
   aiControlled: 0
   attackCompleted: 0
+  inHitStop: 0
+  incomingStun: 0
   maxSpeed: 8
   jumpForce: 16
   airFriction: 10

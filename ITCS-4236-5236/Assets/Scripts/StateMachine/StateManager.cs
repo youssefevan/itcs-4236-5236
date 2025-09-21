@@ -18,15 +18,11 @@ public class StateManager : MonoBehaviour
         State block = new Block();
         State crouch = new Crouch();
         State hitstun = new Hitstun();
+        State knockback = new Knockback();
 
         AttackGround kickGroundNeutral = new AttackGround();
-        kickGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(50, -1), 1);
-
         AttackAir kickAirDown = new AttackAir();
-        kickAirDown.SetAttackData(10, 20, new Vector2(1, -1), new Vector2(15, -15), 3);
-
         AttackGround punchGroundNeutral = new AttackGround();
-        punchGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(30, 0), 3);
 
         states.Add("idle", idle);
         states.Add("fall", fall);
@@ -37,6 +33,7 @@ public class StateManager : MonoBehaviour
         states.Add("block", block);
         states.Add("crouch", crouch);
         states.Add("hitstun", hitstun);
+        states.Add("knockback", knockback);
 
         states.Add("kickGroundNeutral", kickGroundNeutral);
         states.Add("kickAirDown", kickAirDown);
@@ -46,6 +43,10 @@ public class StateManager : MonoBehaviour
         {
             state.Value.Init(this, states, fighter, state.Key);
         }
+
+        kickGroundNeutral.SetAttackData(10, 10, new Vector2(1, 1), new Vector2(50, -1), 1);
+        kickAirDown.SetAttackData(10, 20, new Vector2(1, -1), new Vector2(15, -15), 3);
+        punchGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(30, -1), 3);
 
         currentState = states["idle"];
     }

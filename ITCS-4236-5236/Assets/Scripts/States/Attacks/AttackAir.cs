@@ -1,7 +1,17 @@
+using System;
 using UnityEngine;
 
 public class AttackAir : Attack
 {
+
+    float direction = 1f;
+
+    public override void Enter()
+    {
+        base.Enter();
+        direction = fighter.facing;
+    }
+
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
@@ -12,11 +22,11 @@ public class AttackAir : Attack
         {
             if (velocity_type == 2) // addititve
             {
-                velocity += velocity_modifier;
+                velocity += velocity_modifier * new Vector2(direction, 1);
             }
             else if (velocity_type == 3) // set (linear)
             {
-                velocity = velocity_modifier;
+                velocity = velocity_modifier * new Vector2(direction, 1);
             }
         }
         else
@@ -28,7 +38,15 @@ public class AttackAir : Attack
             velocity.y = -1f;
         }
 
-        fighter.rb.linearVelocity = velocity;
+        if (!fighter.inHitStop)
+        {
+            fighter.rb.linearVelocity = velocity;
+        }
+        else
+        {
+            fighter.rb.linearVelocity = Vector2.zero;
+        }
+
 
         if (fighter.attackCompleted)
         {
@@ -45,7 +63,7 @@ public class AttackAir : Attack
 
         if (velocity_type == 1)
         {
-            velocity = velocity_modifier * fighter.facing;
+            velocity = velocity_modifier * new Vector2(direction, 1);
         }
 
         fighter.rb.linearVelocity = velocity;
