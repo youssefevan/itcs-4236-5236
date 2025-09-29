@@ -44,7 +44,7 @@ public class StateManager : MonoBehaviour
             state.Value.Init(this, states, fighter, state.Key);
         }
 
-        kickGroundNeutral.SetAttackData(10, 10, new Vector2(1, 1), new Vector2(50, -1), 1);
+        kickGroundNeutral.SetAttackData(10, 10, new Vector2(1, 0), new Vector2(50, -1), 1);
         kickAirDown.SetAttackData(10, 20, new Vector2(1, -1), new Vector2(15, -15), 3);
         punchGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(30, -1), 3);
 

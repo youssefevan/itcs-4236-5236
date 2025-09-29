@@ -20,6 +20,7 @@ public abstract class State
     {
         fighter.animator.Play(name);
         fighter.attackCompleted = false;
+        Debug.Log(fighter + ": " + name);
     }
 
     public virtual State? PhysicsUpdate()

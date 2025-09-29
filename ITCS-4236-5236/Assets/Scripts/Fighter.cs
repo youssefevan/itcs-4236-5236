@@ -62,7 +62,39 @@ public class Fighter : MonoBehaviour
     void FixedUpdate()
     {
         stateManager.PhysicsUpdate();
+        FaceOpponent();
 
+        if (aiControlled)
+        {
+            AIInputController controller = (AIInputController)inputType;
+
+            // recieve opponent state
+            State oState = opponent.stateManager.GetCurrentState();
+            float oDist = Mathf.Abs(opponent.transform.position.x - transform.position.x);
+
+            // respond
+            if (oDist > 6)
+            {
+                controller.Move(1 * facing);
+            }
+            else if (oDist < 2)
+            {
+                if (oState is Attack)
+                {
+                    controller.SetInputs(0, 0, false, false, true, false, false);
+                } else {
+                    controller.Move(-1 * facing);
+                }
+            }
+            else
+            {
+                controller.Idle();
+            }
+        }
+    }
+
+    private void FaceOpponent()
+    {
         if (opponent)
         {
             if (opponent.transform.position.x - transform.position.x > 0)
@@ -75,11 +107,6 @@ public class Fighter : MonoBehaviour
                 fighter_transform.localScale = new Vector2(-4, 4);
                 facing = -1;
             }
-        }
-
-        if (aiControlled)
-        {
-            ((AIInputController)inputType).SetInputs(0, 0, false, false, true, false, false);
         }
     }
 
@@ -102,6 +129,7 @@ public class Fighter : MonoBehaviour
     public void PerformHit()
     {
         StartCoroutine(ApplyHitStop(hitbox.knockback_power / 120f));
+        //hitbox.SetActive(false);
     }
 
     public IEnumerator ApplyHitStop(float time)

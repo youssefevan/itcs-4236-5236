@@ -20,4 +20,14 @@ public class AIInputController : MonoBehaviour, IFighterInput
         punchInput = punch;
         kickInput = kick;
     }
+
+    public void Idle()
+    {
+        SetInputs(0, 0, false, false, false, false, false);
+    }
+
+    public void Move(float dir)
+    {
+        SetInputs(dir, 0, false, false, false, false, false);
+    }
 }
