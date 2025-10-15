@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: dfd544c51e2a49148a39df028972fea8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -696986682834306472
+    second: MR.Line Sprite sheet_0
+  - first:
+      213: 537523251978677846
+    second: MR.Line Sprite sheet_1
+  - first:
+      213: 5613744152630079573
+    second: MR.Line Sprite sheet_2
+  - first:
+      213: -6658084387744070308
+    second: MR.Line Sprite sheet_3
+  - first:
+      213: 5543272254282318463
+    second: MR.Line Sprite sheet_4
+  - first:
+      213: -2224162233381237586
+    second: MR.Line Sprite sheet_5
+  - first:
+      213: -4431278274010399617
+    second: MR.Line Sprite sheet_6
+  - first:
+      213: 2460626684020515706
+    second: MR.Line Sprite sheet_7
+  - first:
+      213: -4650392327355244655
+    second: MR.Line Sprite sheet_8
+  - first:
+      213: 3061280130679054105
+    second: MR.Line Sprite sheet_9
+  - first:
+      213: 191016281035176543
+    second: MR.Line Sprite sheet_10
+  - first:
+      213: 3011613933657450598
+    second: MR.Line Sprite sheet_11
+  - first:
+      213: 8850120077131913117
+    second: MR.Line Sprite sheet_12
+  - first:
+      213: 8671079005401312529
+    second: MR.Line Sprite sheet_13
+  - first:
+      213: 4776082726776604404
+    second: MR.Line Sprite sheet_14
+  - first:
+      213: -6103392521986801410
+    second: MR.Line Sprite sheet_15
+  - first:
+      213: -7139479412998472295
+    second: MR.Line Sprite sheet_16
+  - first:
+      213: 7802073047493772822
+    second: MR.Line Sprite sheet_17
+  - first:
+      213: 7370839841071346684
+    second: MR.Line Sprite sheet_18
+  - first:
+      213: -1481993954183492592
+    second: MR.Line Sprite sheet_19
+  - first:
+      213: -3935589266453584156
+    second: MR.Line Sprite sheet_20
+  - first:
+      213: -2182056885504206056
+    second: MR.Line Sprite sheet_21
+  - first:
+      213: 3830306460411835449
+    second: MR.Line Sprite sheet_22
+  - first:
+      213: -6845838707049565284
+    second: MR.Line Sprite sheet_23
+  - first:
+      213: 6743816099230210650
+    second: MR.Line Sprite sheet_24
+  - first:
+      213: -90445494914715193
+    second: MR.Line Sprite sheet_25
+  - first:
+      213: -386409840375983593
+    second: MR.Line Sprite sheet_26
+  - first:
+      213: -1552200472210581694
+    second: MR.Line Sprite sheet_27
+  - first:
+      213: 1597050337430672858
+    second: MR.Line Sprite sheet_28
+  - first:
+      213: 531083643633791682
+    second: MR.Line Sprite sheet_29
+  - first:
+      213: 1783252542785510117
+    second: MR.Line Sprite sheet_30
+  - first:
+      213: -1489926546825311038
+    second: MR.Line Sprite sheet_31
+  - first:
+      213: 1097225352295255497
+    second: MR.Line Sprite sheet_32
+  - first:
+      213: -2010987424003551818
+    second: MR.Line Sprite sheet_33
+  - first:
+      213: -2115236842584321861
+    second: MR.Line Sprite sheet_34
+  - first:
+      213: -5935726248940083314
+    second: MR.Line Sprite sheet_35
+  - first:
+      213: 5567186819368679205
+    second: MR.Line Sprite sheet_36
+  - first:
+      213: -3705652512184326270
+    second: MR.Line Sprite sheet_37
+  - first:
+      213: 4746232350709530235
+    second: MR.Line Sprite sheet_38
+  - first:
+      213: -3963467033896300848
+    second: MR.Line Sprite sheet_39
+  - first:
+      213: -2057794082233714065
+    second: MR.Line Sprite sheet_40
+  - first:
+      213: -6272629412682039797
+    second: MR.Line Sprite sheet_41
+  - first:
+      213: 3085284088281497724
+    second: MR.Line Sprite sheet_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 3685
+        width: 194
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85abb740e4ec356f0800000000000000
+      internalID: -696986682834306472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 3685
+        width: 194
+        height: 323
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ea3bcbc8aa57700800000000000000
+      internalID: 537523251978677846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 3685
+        width: 191
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 550317d509608ed40800000000000000
+      internalID: 5613744152630079573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1602
+        y: 3685
+        width: 191
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55c0ff768bb993a0800000000000000
+      internalID: -6658084387744070308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 3319
+        width: 186
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f72c6c9eeb8adec40800000000000000
+      internalID: 5543272254282318463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 3319
+        width: 196
+        height: 319
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacc87c9b303221e0800000000000000
+      internalID: -2224162233381237586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1229
+        y: 3309
+        width: 152
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7c34b043efe082c0800000000000000
+      internalID: -4431278274010399617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1597
+        y: 3316
+        width: 155
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a73e3e1aee6e52220800000000000000
+      internalID: 2460626684020515706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 3318
+        width: 172
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19fd9cd21dc767fb0800000000000000
+      internalID: -4650392327355244655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 3313
+        width: 186
+        height: 311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91f161b3f0adb7a20800000000000000
+      internalID: 3061280130679054105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2943
+        width: 209
+        height: 321
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5afa69ab40a6a200800000000000000
+      internalID: 191016281035176543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 2943
+        width: 222
+        height: 306
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668e44c9ae66bc920800000000000000
+      internalID: 3011613933657450598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1196
+        y: 2941
+        width: 163
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d971009f151f1da70800000000000000
+      internalID: 8850120077131913117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 2941
+        width: 160
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11dea400a6cd55870800000000000000
+      internalID: 8671079005401312529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1513
+        y: 2415
+        width: 253
+        height: 238
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f6066b6fed084240800000000000000
+      internalID: 4776082726776604404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1977
+        y: 2617
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef08332a6d46c4ba0800000000000000
+      internalID: -6103392521986801410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2353
+        y: 2625
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99df20bec497bec90800000000000000
+      internalID: -7139479412998472295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2414
+        y: 2598
+        width: 60
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 616048b7918864c60800000000000000
+      internalID: 7802073047493772822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2466
+        y: 2591
+        width: 36
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf3ba5778cb7a4660800000000000000
+      internalID: 7370839841071346684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 2201
+        width: 116
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ccd91c956ee6be0800000000000000
+      internalID: -1481993954183492592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 1210
+        y: 2237
+        width: 176
+        height: 385
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6a13fe96af169c0800000000000000
+      internalID: -3935589266453584156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2410
+        y: 2547
+        width: 17
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81b93dbd2d6c7b1e0800000000000000
+      internalID: -2182056885504206056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 2203
+        width: 215
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9343bb19e6bf72530800000000000000
+      internalID: 3830306460411835449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 2455
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c93f0bc77f1bef0a0800000000000000
+      internalID: -6845838707049565284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 2466
+        width: 35
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5a5d211309d69d50800000000000000
+      internalID: 6743816099230210650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 2400
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c1f2143d4caebef0800000000000000
+      internalID: -90445494914715193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 1981
+        y: 2419
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7129ca62c4233aaf0800000000000000
+      internalID: -386409840375983593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 2388
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 247d1b9f4e9757ae0800000000000000
+      internalID: -1552200472210581694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1622
+        y: 2321
+        width: 67
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad519f202dcd92610800000000000000
+      internalID: 1597050337430672858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 1837
+        width: 195
+        height: 337
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c2ffc492c9ce5700800000000000000
+      internalID: 531083643633791682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 1837
+        width: 175
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5eada855db26fb810800000000000000
+      internalID: 1783252542785510117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 1219
+        y: 1837
+        width: 275
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cc8d0b13b7b25be0800000000000000
+      internalID: -1489926546825311038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_32
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1837
+        width: 275
+        height: 318
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd8c1205a02a3f00800000000000000
+      internalID: 1097225352295255497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_33
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1463
+        width: 192
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd8d70b7998714e0800000000000000
+      internalID: -2010987424003551818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_34
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 1463
+        width: 306
+        height: 291
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb051f57c4b25a2e0800000000000000
+      internalID: -2115236842584321861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 1463
+        width: 317
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e87e6f7ec6010ada0800000000000000
+      internalID: -5935726248940083314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_36
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 1463
+        width: 245
+        height: 300
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 527f4be7aee924d40800000000000000
+      internalID: 5567186819368679205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_37
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 1090
+        width: 218
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 287283e6ca0e29cc0800000000000000
+      internalID: -3705652512184326270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_38
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 1090
+        width: 309
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e32852d210ed140800000000000000
+      internalID: 4746232350709530235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_39
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 1090
+        width: 328
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dec3a56bbfeef8c0800000000000000
+      internalID: -3963467033896300848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1518
+        y: 1090
+        width: 236
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6afe835f2f3173e0800000000000000
+      internalID: -2057794082233714065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_41
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 726
+        width: 171
+        height: 231
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0e7b6178c423f8a0800000000000000
+      internalID: -6272629412682039797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MR.Line Sprite sheet_42
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 726
+        width: 282
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c700f21288121da20800000000000000
+      internalID: 3085284088281497724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MR.Line Sprite sheet_0: -696986682834306472
+      MR.Line Sprite sheet_1: 537523251978677846
+      MR.Line Sprite sheet_10: 191016281035176543
+      MR.Line Sprite sheet_11: 3011613933657450598
+      MR.Line Sprite sheet_12: 8850120077131913117
+      MR.Line Sprite sheet_13: 8671079005401312529
+      MR.Line Sprite sheet_14: 4776082726776604404
+      MR.Line Sprite sheet_15: -6103392521986801410
+      MR.Line Sprite sheet_16: -7139479412998472295
+      MR.Line Sprite sheet_17: 7802073047493772822
+      MR.Line Sprite sheet_18: 7370839841071346684
+      MR.Line Sprite sheet_19: -1481993954183492592
+      MR.Line Sprite sheet_2: 5613744152630079573
+      MR.Line Sprite sheet_20: -3935589266453584156
+      MR.Line Sprite sheet_21: -2182056885504206056
+      MR.Line Sprite sheet_22: 3830306460411835449
+      MR.Line Sprite sheet_23: -6845838707049565284
+      MR.Line Sprite sheet_24: 6743816099230210650
+      MR.Line Sprite sheet_25: -90445494914715193
+      MR.Line Sprite sheet_26: -386409840375983593
+      MR.Line Sprite sheet_27: -1552200472210581694
+      MR.Line Sprite sheet_28: 1597050337430672858
+      MR.Line Sprite sheet_29: 531083643633791682
+      MR.Line Sprite sheet_3: -6658084387744070308
+      MR.Line Sprite sheet_30: 1783252542785510117
+      MR.Line Sprite sheet_31: -1489926546825311038
+      MR.Line Sprite sheet_32: 1097225352295255497
+      MR.Line Sprite sheet_33: -2010987424003551818
+      MR.Line Sprite sheet_34: -2115236842584321861
+      MR.Line Sprite sheet_35: -5935726248940083314
+      MR.Line Sprite sheet_36: 5567186819368679205
+      MR.Line Sprite sheet_37: -3705652512184326270
+      MR.Line Sprite sheet_38: 4746232350709530235
+      MR.Line Sprite sheet_39: -3963467033896300848
+      MR.Line Sprite sheet_4: 5543272254282318463
+      MR.Line Sprite sheet_40: -2057794082233714065
+      MR.Line Sprite sheet_41: -6272629412682039797
+      MR.Line Sprite sheet_42: 3085284088281497724
+      MR.Line Sprite sheet_5: -2224162233381237586
+      MR.Line Sprite sheet_6: -4431278274010399617
+      MR.Line Sprite sheet_7: 2460626684020515706
+      MR.Line Sprite sheet_8: -4650392327355244655
+      MR.Line Sprite sheet_9: 3061280130679054105
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class Idle : State
 {
+
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();

@@ -398,25 +398,35 @@ MonoBehaviour:
   rb: {fileID: 0}
   stateManager: {fileID: 0}
   animator: {fileID: 0}
-  fighter_transform: {fileID: 0}
+  fighterTransform: {fileID: 0}
   hitbox: {fileID: 7372732972929296777}
   hurtbox: {fileID: 7780419273169004902}
+  opponent: {fileID: 0}
   aiControlled: 0
   attackCompleted: 0
   inHitStop: 0
   incomingStun: 0
+  incomingKBAngle: {x: 0, y: 0}
+  incomingKBPower: 1
   maxSpeed: 8
   jumpForce: 16
   airFriction: 10
   groundFriction: 20
   upGravity: 30
   downGravity: 60
-  facing: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   groundCheckPosition: {fileID: 3333344102139434809}
   groundCheckSize: {x: 0.1, y: 0.05}
+  facing: 1
+  opponentDistance: 0
+  opponentVelocity: 0
+  opponentApproaching: 0
+  aiActions:
+  - {fileID: 11400000, guid: 5a1625fcf613981408160ccc0f40afd9, type: 2}
+  - {fileID: 11400000, guid: 9d18f2728b4036c468a9972d59dbb5ea, type: 2}
+  - {fileID: 11400000, guid: c60b59114848d3249a80832996d79022, type: 2}
 --- !u!114 &4216916737194913335
 MonoBehaviour:
   m_ObjectHideFlags: 0

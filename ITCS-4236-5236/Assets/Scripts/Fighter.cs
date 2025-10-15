@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Fighter : MonoBehaviour
@@ -8,7 +10,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public Rigidbody2D rb;
     [HideInInspector] public StateManager stateManager;
     [HideInInspector] public Animator animator;
-    [HideInInspector] public Transform fighter_transform;
+    [HideInInspector] public Transform fighterTransform;
     public Hitbox hitbox;
     public Hurtbox hurtbox;
     public Fighter opponent;
@@ -20,7 +22,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public bool inHitStop = false;
     [HideInInspector] public float incomingStun = 0f;
     [HideInInspector] public Vector2 incomingKBAngle = Vector2.zero;
-    [HideInInspector] public int incomingKBPower = 1;
+    [HideInInspector] public float incomingKBPower = 1f;
 
     [Header("Movement")]
     [HideInInspector] public float maxSpeed = 8f;
@@ -29,7 +31,6 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float groundFriction = 20f;
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
-    [HideInInspector] public float facing = 1f;
 
     [Header("---Ground Check---")]
     public LayerMask groundLayer;
@@ -37,11 +38,21 @@ public class Fighter : MonoBehaviour
     public Vector2 groundCheckSize = new Vector2(0.1f, 0.05f);
 
 
+    [Header("Context")]
+    [HideInInspector] public float facing = 1f;
+    [HideInInspector] public float opponentDistance;
+    [HideInInspector] public State opponentState;
+    [HideInInspector] public float opponentVelocity;
+    [HideInInspector] public bool opponentApproaching;
+    [HideInInspector] public float opponentAttackRemaining;
+    public List<AIAction> aiActions;
+    private int aiFrame = 0;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        fighter_transform = GetComponent<Transform>();
+        fighterTransform = GetComponent<Transform>();
 
         stateManager = GetComponent<StateManager>();
         stateManager.Init(this);
@@ -66,30 +77,76 @@ public class Fighter : MonoBehaviour
 
         if (aiControlled)
         {
-            AIInputController controller = (AIInputController)inputType;
+            aiFrame += 1;
 
-            // recieve opponent state
-            State oState = opponent.stateManager.GetCurrentState();
-            float oDist = Mathf.Abs(opponent.transform.position.x - transform.position.x);
-
-            // respond
-            if (oDist > 6)
+            if (aiFrame % 10 == 0)
             {
-                controller.Move(1 * facing);
+                AIInputController controller = (AIInputController)inputType;
+                CalculateDecision(controller);
             }
-            else if (oDist < 2)
+
+            if (aiFrame > 1000)
             {
-                if (oState is Attack)
-                {
-                    controller.SetInputs(0, 0, false, false, true, false, false);
-                } else {
-                    controller.Move(-1 * facing);
-                }
+                aiFrame = 0;
+            }
+        }
+    }
+
+    private void CalculateContext()
+    {
+
+        opponentDistance = Mathf.Abs(fighterTransform.position.x - opponent.transform.position.x);
+        opponentState = opponent.stateManager.GetCurrentState();
+        opponentVelocity = opponent.rb.linearVelocityX;
+
+
+        AnimatorStateInfo oppAnimInfo = opponent.animator.GetCurrentAnimatorStateInfo(0);
+        opponentAttackRemaining = 1f - (oppAnimInfo.normalizedTime % 1f);
+
+        if (facing == 1)
+        {
+            if (opponentVelocity < 0)
+            {
+                opponentApproaching = true;
             }
             else
             {
-                controller.Idle();
+                opponentApproaching = false;
             }
+        }
+        else
+        {
+            if (opponentVelocity > 0)
+            {
+                opponentApproaching = true;
+            }
+            else
+            {
+                opponentApproaching = false;
+            }
+        }
+    }
+
+    private void CalculateDecision(AIInputController controller)
+    {
+        CalculateContext();
+
+        AIAction choice = null;
+        float highScore = 0f;
+        foreach (AIAction a in aiActions)
+        {
+            float score = a.CalculateScore(this);
+
+            if (score > highScore)
+            {
+                highScore = score;
+                choice = a;
+            }
+        }
+
+        if (highScore > 0f)
+        {
+            choice.Execute(this, controller);
         }
     }
 
@@ -99,12 +156,12 @@ public class Fighter : MonoBehaviour
         {
             if (opponent.transform.position.x - transform.position.x > 0)
             {
-                fighter_transform.localScale = new Vector2(4, 4);
+                fighterTransform.localScale = new Vector2(4, 4);
                 facing = 1;
             }
             else
             {
-                fighter_transform.localScale = new Vector2(-4, 4);
+                fighterTransform.localScale = new Vector2(-4, 4);
                 facing = -1;
             }
         }
