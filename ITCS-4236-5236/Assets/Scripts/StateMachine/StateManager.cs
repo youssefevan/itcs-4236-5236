@@ -20,9 +20,10 @@ public class StateManager : MonoBehaviour
         State hitstun = new Hitstun();
         State knockback = new Knockback();
 
-        AttackGround kickGroundNeutral = new AttackGround();
-        AttackAir kickAirDown = new AttackAir();
-        AttackGround punchGroundNeutral = new AttackGround();
+        AttackGround kickHigh = new AttackGround();
+        AttackGround punchHigh = new AttackGround();
+        AttackGround kickLow = new AttackGround();
+        AttackGround punchLow = new AttackGround();
 
         states.Add("idle", idle);
         states.Add("fall", fall);
@@ -35,18 +36,20 @@ public class StateManager : MonoBehaviour
         states.Add("hitstun", hitstun);
         states.Add("knockback", knockback);
 
-        states.Add("kickGroundNeutral", kickGroundNeutral);
-        states.Add("kickAirDown", kickAirDown);
-        states.Add("punchGroundNeutral", punchGroundNeutral);
+        states.Add("kickHigh", kickHigh);
+        states.Add("punchHigh", punchHigh);
+        states.Add("kickLow", kickLow);
+        states.Add("punchLow", punchLow);
 
         foreach (KeyValuePair<string, State> state in states)
         {
             state.Value.Init(this, states, fighter, state.Key);
         }
 
-        kickGroundNeutral.SetAttackData(10, 10, new Vector2(1, 0), new Vector2(50, -1), 1);
-        kickAirDown.SetAttackData(10, 20, new Vector2(1, -1), new Vector2(15, -15), 3);
-        punchGroundNeutral.SetAttackData(10, 20, new Vector2(1, 1), new Vector2(30, -1), 3);
+        kickHigh.SetAttackData(15, 20, new Vector2(1, 1), new Vector2(50, -1), 1);
+        punchHigh.SetAttackData(10, 10, new Vector2(1, 0.5f), new Vector2(15, -1), 3);
+        kickLow.SetAttackData(10, 20, new Vector2(0.5f, 1), new Vector2(25, -1), 1);
+        punchLow.SetAttackData(10, 10, new Vector2(1, 0.2f), new Vector2(0, -1), 0);
 
         currentState = states["idle"];
     }

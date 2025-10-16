@@ -156,12 +156,12 @@ public class Fighter : MonoBehaviour
         {
             if (opponent.transform.position.x - transform.position.x > 0)
             {
-                fighterTransform.localScale = new Vector2(4, 4);
+                fighterTransform.localScale = new Vector2(6, 6);
                 facing = 1;
             }
             else
             {
-                fighterTransform.localScale = new Vector2(-4, 4);
+                fighterTransform.localScale = new Vector2(-6, 6);
                 facing = -1;
             }
         }

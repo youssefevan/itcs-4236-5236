@@ -49,28 +49,12 @@ public class Idle : State
 
         if (fighter.inputType.kickInput)
         {
-            switch (fighter.inputType.aimInput)
-            {
-                case 1:
-                    break;
-                case 0:
-                    return states["kickGroundNeutral"];
-                case -1:
-                    break;
-            }
+            return states["kickHigh"];
         }
 
         if (fighter.inputType.punchInput)
         {
-            switch (fighter.inputType.aimInput)
-            {
-                case 1:
-                    break;
-                case 0:
-                    return states["punchGroundNeutral"];
-                case -1:
-                    break;
-            }
+            return states["punchHigh"];
         }
 
         return null;
