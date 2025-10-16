@@ -131,7 +131,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.6
+        time: 0.68333334
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -179,7 +179,7 @@ AnimationClip:
       value: {fileID: -1222539121, guid: e07bcdb1728b9dd4896273c4bbeefb74, type: 3}
     - time: 0.46666667
       value: {fileID: -1522076487, guid: e07bcdb1728b9dd4896273c4bbeefb74, type: 3}
-    - time: 0.53333336
+    - time: 0.56666666
       value: {fileID: -2131647407, guid: e07bcdb1728b9dd4896273c4bbeefb74, type: 3}
     attribute: m_Sprite
     path: 
@@ -267,7 +267,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.6
+    m_StopTime: 0.68333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -315,7 +315,7 @@ AnimationClip:
         inWeight: 0
         outWeight: 0
       - serializedVersion: 3
-        time: 0.6
+        time: 0.68333334
         value: 0
         inSlope: Infinity
         outSlope: Infinity
@@ -669,7 +669,7 @@ AnimationClip:
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.6
+  - time: 0.68333334
     functionName: AttackCompleted
     data: 
     objectReferenceParameter: {fileID: 0}

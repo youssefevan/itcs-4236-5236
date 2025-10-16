@@ -9,29 +9,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9227317b0990e74f9f03243e5575064, type: 3}
-  m_Name: Evade
-  m_EditorClassIdentifier: Assembly-CSharp::ActionEvade
+  m_Script: {fileID: 11500000, guid: c8d04d344846e674ab0c6b776385c33c, type: 3}
+  m_Name: HighKick
+  m_EditorClassIdentifier: Assembly-CSharp::ActionCrouch
   oppDist:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.7381552
-      inSlope: 0.8170907
-      outSlope: 0.8170907
-      tangentMode: 0
+      value: 0.6035369
+      inSlope: 1.0451039
+      outSlope: 1.0451039
+      tangentMode: 34
       weightedMode: 3
       inWeight: 0
-      outWeight: 0.5245098
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.27566186
+      value: 0.8916322
+      inSlope: -0.055013735
+      outSlope: -0.055013735
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.33333334
+      outWeight: 0.28882295
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.1105229
+      outSlope: -0.1105229
       tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
+      weightedMode: 3
+      inWeight: 0.73914057
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -41,21 +50,21 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      value: 1
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 0.9285698
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      value: 0
+      inSlope: -1
+      outSlope: -1
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

@@ -6,17 +6,18 @@ using UnityEngine.SocialPlatforms.Impl;
 [CreateAssetMenu(menuName = "AIAction/ActionApproach")]
 public class ActionApproach : AIAction
 {
-    public override void EvaluateContext(Fighter f)
+    public override void EvaluateContext(Fighter f, AIInputController controller)
     {
-        base.EvaluateContext(f);
+        base.EvaluateContext(f, controller);
 
         if (f.opponentState is Attack)
         {
             scores.Add(0.5f);
         }
-        else
+
+        if (f.opponentApproaching)
         {
-            scores.Add(0.9f);
+            scores.Add(0.6f);
         }
     }
 

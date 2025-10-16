@@ -5,6 +5,7 @@ public class Move : State
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
+        fighter.FaceOpponent();
 
         Vector2 velocity = fighter.rb.linearVelocity;
 

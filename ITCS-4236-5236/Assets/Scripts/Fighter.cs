@@ -47,6 +47,8 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float opponentAttackRemaining;
     public List<AIAction> aiActions;
     private int aiFrame = 0;
+    public Queue<AIAction> previousActions = new Queue<AIAction>();
+    public int maxPrevActions = 4;
 
     void Awake()
     {
@@ -73,7 +75,6 @@ public class Fighter : MonoBehaviour
     void FixedUpdate()
     {
         stateManager.PhysicsUpdate();
-        FaceOpponent();
 
         if (aiControlled)
         {
@@ -99,9 +100,16 @@ public class Fighter : MonoBehaviour
         opponentState = opponent.stateManager.GetCurrentState();
         opponentVelocity = opponent.rb.linearVelocityX;
 
+        if (opponentState is Attack)
+        {
+            AnimatorStateInfo oppAnimInfo = opponent.animator.GetCurrentAnimatorStateInfo(0);
+            opponentAttackRemaining = 1f - (oppAnimInfo.normalizedTime % 1f);
+        }
+        else
+        {
+            opponentAttackRemaining = -1f;
+        }
 
-        AnimatorStateInfo oppAnimInfo = opponent.animator.GetCurrentAnimatorStateInfo(0);
-        opponentAttackRemaining = 1f - (oppAnimInfo.normalizedTime % 1f);
 
         if (facing == 1)
         {
@@ -127,6 +135,16 @@ public class Fighter : MonoBehaviour
         }
     }
 
+    public void AddPreviousAction(AIAction newAction)
+    {
+        if (previousActions.Count >= maxPrevActions)
+        {
+            previousActions.Dequeue();
+        }
+
+        previousActions.Enqueue(newAction);
+    }
+
     private void CalculateDecision(AIInputController controller)
     {
         CalculateContext();
@@ -135,7 +153,7 @@ public class Fighter : MonoBehaviour
         float highScore = 0f;
         foreach (AIAction a in aiActions)
         {
-            float score = a.CalculateScore(this);
+            float score = a.CalculateScore(this, controller);
 
             if (score > highScore)
             {
@@ -150,7 +168,7 @@ public class Fighter : MonoBehaviour
         }
     }
 
-    private void FaceOpponent()
+    public void FaceOpponent()
     {
         if (opponent)
         {
@@ -186,7 +204,7 @@ public class Fighter : MonoBehaviour
     public void PerformHit()
     {
         StartCoroutine(ApplyHitStop(hitbox.knockback_power / 120f));
-        //hitbox.SetActive(false);
+        hitbox.enabled = false;
     }
 
     public IEnumerator ApplyHitStop(float time)

@@ -5,6 +5,7 @@ public class Fall : State
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
+        fighter.FaceOpponent();
 
         Vector2 velocity = fighter.rb.linearVelocity;
 
@@ -20,19 +21,6 @@ public class Fall : State
         if (fighter.IsGrounded())
         {
             return states["land"];
-        }
-
-        if (fighter.inputType.kickInput)
-        {
-            switch (fighter.inputType.aimInput)
-            {
-                case 1:
-                    break;
-                case 0:
-                    break;
-                case -1:
-                    return states["kickAirDown"];
-            }
         }
 
         return null;

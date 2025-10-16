@@ -9,38 +9,38 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b52126fe8184d746a0a4dc826489977, type: 3}
-  m_Name: Block
-  m_EditorClassIdentifier: Assembly-CSharp::ActionBlock
+  m_Script: {fileID: 11500000, guid: 3a9c86968c37c85449d8bcb42f0e7a76, type: 3}
+  m_Name: HighPunch
+  m_EditorClassIdentifier: Assembly-CSharp::ActionHighPunch
   oppDist:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.7
-      inSlope: -0.06305289
-      outSlope: 0
-      tangentMode: 69
+      value: 0.6035369
+      inSlope: 1.0451039
+      outSlope: 1.0451039
+      tangentMode: 34
       weightedMode: 3
       inWeight: 0
-      outWeight: 0.49596557
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.3
-      value: 0.7
-      inSlope: -0
-      outSlope: -1.4753255
-      tangentMode: 5
+      time: 0.27566186
+      value: 0.8916322
+      inSlope: -0.055013735
+      outSlope: -0.055013735
+      tangentMode: 0
       weightedMode: 3
-      inWeight: 0.21955663
-      outWeight: 0.21096621
+      inWeight: 0.33333334
+      outWeight: 0.28882295
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: -0.2951687
-      outSlope: -0.2951687
+      inSlope: -0.1105229
+      outSlope: -0.1105229
       tangentMode: 0
       weightedMode: 3
-      inWeight: 0.63898337
+      inWeight: 0.73914057
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
@@ -50,30 +50,30 @@ MonoBehaviour:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      value: 1
+      inSlope: -0.22216967
+      outSlope: -0.22216967
+      tangentMode: 34
       weightedMode: 0
       inWeight: 0
-      outWeight: 0
+      outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.36601308
-      value: 0.62234616
-      inSlope: 0.27593672
-      outSlope: 0.27593672
-      tangentMode: 0
+      time: 0.37021282
+      value: 0.91774994
+      inSlope: -0.8397039
+      outSlope: -0.8397039
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0.36111113
-      outWeight: 0.059523806
+      inWeight: 0.33333334
+      outWeight: 0.33333334
     - serializedVersion: 3
       time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
+      value: 0
+      inSlope: -1.4572382
+      outSlope: -1.4572382
+      tangentMode: 34
       weightedMode: 0
-      inWeight: 0
+      inWeight: 0.33333334
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2

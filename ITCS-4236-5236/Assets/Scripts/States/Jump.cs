@@ -15,6 +15,7 @@ public class Jump : State
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
+        fighter.FaceOpponent();
 
         velocity = fighter.rb.linearVelocity;
 
@@ -35,19 +36,6 @@ public class Jump : State
         if (velocity.y < 0)
         {
             return states["fall"];
-        }
-
-        if (fighter.inputType.kickInput)
-        {
-            switch (fighter.inputType.aimInput)
-            {
-                case 1:
-                    break;
-                case 0:
-                    break;
-                case -1:
-                    return states["kickAirDown"];
-            }
         }
 
         return null;

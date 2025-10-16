@@ -14,6 +14,7 @@ public class Jumpsquat : State
     public override State? PhysicsUpdate()
     {
         base.PhysicsUpdate();
+        fighter.FaceOpponent();
 
         currentTime += Time.fixedDeltaTime;
 

@@ -7,9 +7,9 @@ using UnityEngine.SocialPlatforms.Impl;
 [CreateAssetMenu(menuName = "AIAction/ActionBlock")]
 public class ActionBlock : AIAction
 {
-    public override void EvaluateContext(Fighter f)
+    public override void EvaluateContext(Fighter f, AIInputController controller)
     {
-        base.EvaluateContext(f);
+        base.EvaluateContext(f, controller);
 
         if (f.opponentState is Attack)
         {
@@ -17,7 +17,22 @@ public class ActionBlock : AIAction
         }
         else
         {
-            scores.Add(0.2f);
+            scores.Add(0.3f);
+        }
+
+        if (!f.opponentApproaching)
+        {
+            scores.Add(0.3f);
+        }
+
+        if (f.opponentState is Crouch)
+        {
+            scores.Add(0.5f);
+        }
+
+        if (f.opponentState is Block)
+        {
+            scores.Add(0.3f);
         }
     }
 
