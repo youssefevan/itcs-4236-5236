@@ -35,7 +35,8 @@ public class AIAction : ScriptableObject
             f.stateManager.GetCurrentState() is Jumpsquat ||
             f.stateManager.GetCurrentState() is Land ||
             f.stateManager.GetCurrentState() is Hitstun ||
-            f.stateManager.GetCurrentState() is Knockback
+            f.stateManager.GetCurrentState() is Knockback ||
+            f.stateManager.GetCurrentState() is Dodge
         )
         {
             scores.Add(0f);

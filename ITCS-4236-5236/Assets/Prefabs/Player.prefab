@@ -400,6 +400,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   fighterTransform: {fileID: 0}
   sprite: {fileID: 0}
+  collider: {fileID: 0}
   hitbox: {fileID: 7372732972929296777}
   hurtbox: {fileID: 7780419273169004902}
   opponent: {fileID: 0}
@@ -433,6 +434,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 7ac02c668f7b72344893807efffbfb95, type: 2}
   - {fileID: 11400000, guid: c5579edf063c91c4c8a934517b1091ab, type: 2}
   - {fileID: 11400000, guid: 814533bc46cc834458f9bcb02e1fea02, type: 2}
+  - {fileID: 11400000, guid: 82a1a1ab60b233046820f37dbb84cb79, type: 2}
   maxPrevActions: 5
 --- !u!114 &4216916737194913335
 MonoBehaviour:
