@@ -38,6 +38,6 @@ public class ActionBlock : AIAction
 
     public override void Execute(Fighter f, AIInputController controller)
     {
-        controller.SetInputs(0, 0, false, false, true, false, false);
+        controller.SetInputs(0, 0, false, false, true, false, false, false);
     }
 }

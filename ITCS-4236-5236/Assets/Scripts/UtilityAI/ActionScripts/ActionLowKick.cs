@@ -39,6 +39,6 @@ public class ActionLowKick : AIAction
     public override void Execute(Fighter f, AIInputController controller)
     {
         f.AddPreviousAction(this);
-        controller.SetInputs(0, 0, false, true, false, false, true);
+        controller.SetInputs(0, 0, false, true, false, false, true, false);
     }
 }

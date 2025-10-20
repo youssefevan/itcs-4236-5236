@@ -399,6 +399,7 @@ MonoBehaviour:
   stateManager: {fileID: 0}
   animator: {fileID: 0}
   fighterTransform: {fileID: 0}
+  sprite: {fileID: 0}
   hitbox: {fileID: 7372732972929296777}
   hurtbox: {fileID: 7780419273169004902}
   opponent: {fileID: 0}
@@ -646,6 +647,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 2efbe67c-c9ab-41fa-9602-52ebb3736a51
     m_ActionName: 'Player/Aim[/Keyboard/s,/Keyboard/w]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1287399024013401653}
+        m_TargetAssemblyTypeName: PlayerInputController, Assembly-CSharp
+        m_MethodName: Dodge
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 4243255f-f071-4985-ae98-2b0f0841dffe
+    m_ActionName: 'Player/Dodge[/Keyboard/k]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

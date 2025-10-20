@@ -45,6 +45,6 @@ public class ActionHighPunch : AIAction
     public override void Execute(Fighter f, AIInputController controller)
     {
         f.AddPreviousAction(this);
-        controller.SetInputs(0, 0, false, false, false, true, false);
+        controller.SetInputs(0, 0, false, false, false, true, false, false);
     }
 }

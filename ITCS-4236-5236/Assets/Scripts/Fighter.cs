@@ -12,6 +12,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public Animator animator;
     [HideInInspector] public Transform fighterTransform;
     [HideInInspector] public SpriteRenderer sprite;
+    [HideInInspector] public CapsuleCollider2D collider;
     public Hitbox hitbox;
     public Hurtbox hurtbox;
     public Fighter opponent;
@@ -57,6 +58,7 @@ public class Fighter : MonoBehaviour
         animator = GetComponent<Animator>();
         fighterTransform = GetComponent<Transform>();
         sprite = GetComponent<SpriteRenderer>();
+        collider = GetComponent<CapsuleCollider2D>();
 
         stateManager = GetComponent<StateManager>();
         stateManager.Init(this);

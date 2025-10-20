@@ -45,6 +45,6 @@ public class ActionHighKick : AIAction
     public override void Execute(Fighter f, AIInputController controller)
     {
         f.AddPreviousAction(this);
-        controller.SetInputs(0, 0, false, false, false, false, true);
+        controller.SetInputs(0, 0, false, false, false, false, true, false);
     }
 }

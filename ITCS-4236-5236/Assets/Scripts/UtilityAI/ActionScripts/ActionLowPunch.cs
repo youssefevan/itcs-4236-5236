@@ -35,6 +35,6 @@ public class ActionLowPunch : AIAction
     public override void Execute(Fighter f, AIInputController controller)
     {
         f.AddPreviousAction(this);
-        controller.SetInputs(0, 0, false, true, false, true, false);
+        controller.SetInputs(0, 0, false, true, false, true, false, false);
     }
 }

@@ -7,4 +7,5 @@ public interface IFighterInput
     bool blockInput { get; }
     bool punchInput { get; }
     bool kickInput { get; }
+    bool dodgeInput { get; }
 }

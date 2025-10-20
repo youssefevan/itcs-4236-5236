@@ -23,6 +23,11 @@ public class Fall : State
             return states["land"];
         }
 
+        if (fighter.inputType.dodgeInput)
+        {
+            return states["dodge"];
+        }
+
         return null;
     }
 

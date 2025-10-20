@@ -10,6 +10,7 @@ public class PlayerInputController : MonoBehaviour, IFighterInput
     public bool blockInput { get; private set; }
     public bool punchInput { get; private set; }
     public bool kickInput { get; private set; }
+    public bool dodgeInput { get; private set; }
 
     public void Move(InputAction.CallbackContext context)
     {
@@ -44,6 +45,11 @@ public class PlayerInputController : MonoBehaviour, IFighterInput
     public void Kick(InputAction.CallbackContext context)
     {
         kickInput = context.performed;
+    }
+
+    public void Dodge(InputAction.CallbackContext context)
+    {
+        dodgeInput = context.performed;
     }
 
 }

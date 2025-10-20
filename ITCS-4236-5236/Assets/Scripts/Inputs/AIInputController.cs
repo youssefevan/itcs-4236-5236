@@ -9,8 +9,9 @@ public class AIInputController : MonoBehaviour, IFighterInput
     public bool blockInput { get; private set; }
     public bool punchInput { get; private set; }
     public bool kickInput { get; private set; }
+    public bool dodgeInput { get; private set; }
 
-    public void SetInputs(float move, float aim, bool jump, bool crouch, bool block, bool punch, bool kick)
+    public void SetInputs(float move, float aim, bool jump, bool crouch, bool block, bool punch, bool kick, bool dodge)
     {
         moveInput = move;
         aimInput = aim;
@@ -19,15 +20,16 @@ public class AIInputController : MonoBehaviour, IFighterInput
         blockInput = block;
         punchInput = punch;
         kickInput = kick;
+        dodgeInput = dodge;
     }
 
     public void Idle()
     {
-        SetInputs(0, 0, false, false, false, false, false);
+        SetInputs(0, 0, false, false, false, false, false, false);
     }
 
     public void Move(float dir)
     {
-        SetInputs(dir, 0, false, false, false, false, false);
+        SetInputs(dir, 0, false, false, false, false, false, false);
     }
 }
