@@ -12,6 +12,7 @@ public class Knockback : State
         stunTime = fighter.incomingKBPower / 60f;
 
         fighter.rb.linearVelocity = fighter.incomingKBAngle * fighter.incomingKBPower;
+        fighter.sprite.color = Color.grey;
     }
 
     public override State? PhysicsUpdate()
@@ -43,5 +44,11 @@ public class Knockback : State
         }
 
         return null;
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+        fighter.sprite.color = Color.white;
     }
 }
