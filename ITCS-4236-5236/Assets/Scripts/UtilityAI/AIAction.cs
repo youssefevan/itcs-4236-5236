@@ -24,7 +24,7 @@ public class AIAction : ScriptableObject
 
         finalScore *= Random.Range(0.5f, 1.5f);
 
-        Debug.Log(name + ": " + finalScore);
+        //Debug.Log(name + ": " + finalScore);
         return finalScore;
     }
 

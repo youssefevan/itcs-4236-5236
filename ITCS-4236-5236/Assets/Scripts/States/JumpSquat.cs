@@ -3,7 +3,7 @@ using UnityEngine;
 public class Jumpsquat : State
 {
     float currentTime = 0;
-    float targetTime = 0.05f; // 3 frames at 60 fps
+    //float targetTime = 0.05f; // 3 frames at 60 fps
 
     public override void Enter()
     {
@@ -33,7 +33,7 @@ public class Jumpsquat : State
             return states["fall"];
         }
 
-        if (currentTime >= targetTime)
+        if (currentTime >= fighter.jumpsquatTime)
         {
             return states["jump"];
         }

@@ -34,7 +34,7 @@ public class Dodge : State
 
         if (currentTime >= targetTime)
         {
-            velocity.x = 0f;
+            velocity.x /= 2f;
             fighter.rb.linearVelocity = velocity;
             if (fighter.IsGrounded())
             {

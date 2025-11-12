@@ -1,0 +1,923 @@
+fileFormatVersion: 2
+guid: 038f366652be93846bb9730d2f0c6e91
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3872365712264348876
+    second: City night Goon Spritesheet_0
+  - first:
+      213: 6514123298294353794
+    second: City night Goon Spritesheet_1
+  - first:
+      213: 6933034724197039383
+    second: City night Goon Spritesheet_2
+  - first:
+      213: 2094391118346894262
+    second: City night Goon Spritesheet_3
+  - first:
+      213: -3311476144780145606
+    second: City night Goon Spritesheet_4
+  - first:
+      213: -5921077537922546839
+    second: City night Goon Spritesheet_5
+  - first:
+      213: -5740834553676615692
+    second: City night Goon Spritesheet_6
+  - first:
+      213: -8357609200598856828
+    second: City night Goon Spritesheet_7
+  - first:
+      213: -8178365504914251763
+    second: City night Goon Spritesheet_8
+  - first:
+      213: 4034688259008861141
+    second: City night Goon Spritesheet_9
+  - first:
+      213: -3421043433203549287
+    second: City night Goon Spritesheet_10
+  - first:
+      213: -4872765666550282451
+    second: City night Goon Spritesheet_11
+  - first:
+      213: -1564658767249093692
+    second: City night Goon Spritesheet_12
+  - first:
+      213: -6066381142341158478
+    second: City night Goon Spritesheet_13
+  - first:
+      213: 5085047233171717354
+    second: City night Goon Spritesheet_14
+  - first:
+      213: -5008364760718888559
+    second: City night Goon Spritesheet_15
+  - first:
+      213: 6854183898918197548
+    second: City night Goon Spritesheet_16
+  - first:
+      213: 6000775780169185337
+    second: City night Goon Spritesheet_17
+  - first:
+      213: 205760009898782836
+    second: City night Goon Spritesheet_18
+  - first:
+      213: 2677909920377600761
+    second: City night Goon Spritesheet_19
+  - first:
+      213: 5982318425290335163
+    second: City night Goon Spritesheet_20
+  - first:
+      213: -9188134378034002809
+    second: City night Goon Spritesheet_21
+  - first:
+      213: -8196184291198631787
+    second: City night Goon Spritesheet_22
+  - first:
+      213: -7401745593480292757
+    second: City night Goon Spritesheet_23
+  - first:
+      213: -9001321320619425889
+    second: City night Goon Spritesheet_24
+  - first:
+      213: -8226951540183971857
+    second: City night Goon Spritesheet_25
+  - first:
+      213: -9119898355916774136
+    second: City night Goon Spritesheet_26
+  - first:
+      213: -5593690530215300863
+    second: City night Goon Spritesheet_27
+  - first:
+      213: -3180928616819272952
+    second: City night Goon Spritesheet_28
+  - first:
+      213: -436739620575410928
+    second: City night Goon Spritesheet_29
+  - first:
+      213: -4964629866907056918
+    second: City night Goon Spritesheet_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 7373
+        width: 429
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43bb410c6e7924ac0800000000000000
+      internalID: -3872365712264348876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 7373
+        width: 423
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f4ee160a0d66a50800000000000000
+      internalID: 6514123298294353794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2442
+        y: 7373
+        width: 429
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d763f4956173060800000000000000
+      internalID: 6933034724197039383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 3080
+        y: 7373
+        width: 429
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bbbcc520a5c01d10800000000000000
+      internalID: 2094391118346894262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 6653
+        width: 373
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c0334cdf54b02d0800000000000000
+      internalID: -3311476144780145606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 6653
+        width: 329
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9630598b95b14dda0800000000000000
+      internalID: -5921077537922546839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 6659
+        width: 299
+        height: 593
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ff21d1c3657450b0800000000000000
+      internalID: -5740834553676615692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 3210
+        y: 6659
+        width: 299
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48bc4ca66bec30c80800000000000000
+      internalID: -8357609200598856828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 3992
+        y: 6647
+        width: 335
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00274477eb908e80800000000000000
+      internalID: -8178365504914251763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 5909
+        width: 429
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d399a948971ef730800000000000000
+      internalID: 4034688259008861141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 5909
+        width: 397
+        height: 597
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b38ba7f130680d0800000000000000
+      internalID: -3421043433203549287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 2404
+        y: 5883
+        width: 369
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d270d8b7175706cb0800000000000000
+      internalID: -4872765666550282451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3120
+        y: 5873
+        width: 333
+        height: 445
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cbca6f1427394ae0800000000000000
+      internalID: -1564658767249093692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 4421
+        width: 379
+        height: 537
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b970aafd72efcba0800000000000000
+      internalID: -6066381142341158478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 4453
+        width: 409
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec784f4487b19640800000000000000
+      internalID: 5085047233171717354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 4669
+        width: 409
+        height: 529
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19134cb19c6be7ab0800000000000000
+      internalID: -5008364760718888559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 4887
+        width: 383
+        height: 371
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c299838e0f3fe1f50800000000000000
+      internalID: 6854183898918197548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 3697
+        width: 363
+        height: 563
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93870c157c9074350800000000000000
+      internalID: 6000775780169185337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 3703
+        width: 417
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4707ffa83a10bd200800000000000000
+      internalID: 205760009898782836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 2434
+        y: 3703
+        width: 431
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9faf99862e8d92520800000000000000
+      internalID: 2677909920377600761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 3703
+        width: 355
+        height: 573
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb364b089e6750350800000000000000
+      internalID: 5982318425290335163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 2945
+        width: 391
+        height: 609
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7848ab8c6703d7080800000000000000
+      internalID: -9188134378034002809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 2949
+        width: 461
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5900879ffcd414e80800000000000000
+      internalID: -8196184291198631787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_23
+      rect:
+        serializedVersion: 2
+        x: 2102
+        y: 2949
+        width: 473
+        height: 579
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b665bce4997b74990800000000000000
+      internalID: -7401745593480292757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_24
+      rect:
+        serializedVersion: 2
+        x: 2946
+        y: 2949
+        width: 719
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f345f23f1e41380800000000000000
+      internalID: -9001321320619425889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_25
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 2187
+        width: 483
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe74bf6992ff3dd80800000000000000
+      internalID: -8226951540183971857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_26
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 2187
+        width: 483
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80569ebb3cc9f6180800000000000000
+      internalID: -9119898355916774136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_27
+      rect:
+        serializedVersion: 2
+        x: 2248
+        y: 2187
+        width: 651
+        height: 613
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101fc0379183f52b0800000000000000
+      internalID: -5593690530215300863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_28
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1427
+        width: 317
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 803dc9ab6421bd3d0800000000000000
+      internalID: -3180928616819272952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_29
+      rect:
+        serializedVersion: 2
+        x: 1610
+        y: 1433
+        width: 503
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 015834801a360f9f0800000000000000
+      internalID: -436739620575410928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: City night Goon Spritesheet_30
+      rect:
+        serializedVersion: 2
+        x: 2310
+        y: 1433
+        width: 441
+        height: 421
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4c5b590771a1bb0800000000000000
+      internalID: -4964629866907056918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      City night Goon Spritesheet_0: -3872365712264348876
+      City night Goon Spritesheet_1: 6514123298294353794
+      City night Goon Spritesheet_10: -3421043433203549287
+      City night Goon Spritesheet_11: -4872765666550282451
+      City night Goon Spritesheet_12: -1564658767249093692
+      City night Goon Spritesheet_13: -6066381142341158478
+      City night Goon Spritesheet_14: 5085047233171717354
+      City night Goon Spritesheet_15: -5008364760718888559
+      City night Goon Spritesheet_16: 6854183898918197548
+      City night Goon Spritesheet_17: 6000775780169185337
+      City night Goon Spritesheet_18: 205760009898782836
+      City night Goon Spritesheet_19: 2677909920377600761
+      City night Goon Spritesheet_2: 6933034724197039383
+      City night Goon Spritesheet_20: 5982318425290335163
+      City night Goon Spritesheet_21: -9188134378034002809
+      City night Goon Spritesheet_22: -8196184291198631787
+      City night Goon Spritesheet_23: -7401745593480292757
+      City night Goon Spritesheet_24: -9001321320619425889
+      City night Goon Spritesheet_25: -8226951540183971857
+      City night Goon Spritesheet_26: -9119898355916774136
+      City night Goon Spritesheet_27: -5593690530215300863
+      City night Goon Spritesheet_28: -3180928616819272952
+      City night Goon Spritesheet_29: -436739620575410928
+      City night Goon Spritesheet_3: 2094391118346894262
+      City night Goon Spritesheet_30: -4964629866907056918
+      City night Goon Spritesheet_4: -3311476144780145606
+      City night Goon Spritesheet_5: -5921077537922546839
+      City night Goon Spritesheet_6: -5740834553676615692
+      City night Goon Spritesheet_7: -8357609200598856828
+      City night Goon Spritesheet_8: -8178365504914251763
+      City night Goon Spritesheet_9: 4034688259008861141
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

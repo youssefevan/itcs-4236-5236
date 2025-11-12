@@ -27,12 +27,15 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float incomingKBPower = 1f;
 
     [Header("Movement")]
-    [HideInInspector] public float maxSpeed = 8f;
+    [SerializeField] public float maxSpeed = 8f;
+    [SerializeField] public float jumpsquatTime = 0.05f;
+    [SerializeField] public float landTime = 0.05f;
     [HideInInspector] public float jumpForce = 16f;
     [HideInInspector] public float airFriction = 10f;
     [HideInInspector] public float groundFriction = 20f;
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
+    public bool debugStates = false;
 
     [Header("---Ground Check---")]
     public LayerMask groundLayer;
@@ -79,6 +82,11 @@ public class Fighter : MonoBehaviour
     void FixedUpdate()
     {
         stateManager.PhysicsUpdate();
+
+        if (debugStates == true)
+        {
+            Debug.Log(stateManager.GetCurrentState());
+        }
 
         if (aiControlled)
         {

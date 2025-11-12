@@ -5,7 +5,7 @@ using System.Collections;
 public class Land : State
 {
     float currentTime = 0;
-    float targetTime = (3f / 60f); // 3 frames at 60 fps
+    // float targetTime = (3f / 60f); // 3 frames at 60 fps
 
     bool jumpQueued = false;
 
@@ -37,7 +37,7 @@ public class Land : State
             return states["fall"];
         }
 
-        if (currentTime >= targetTime)
+        if (currentTime >= fighter.landTime)
         {
             if (jumpQueued)
             {

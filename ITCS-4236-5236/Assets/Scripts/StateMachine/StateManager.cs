@@ -1,10 +1,57 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[System.Serializable]
+public struct attackData
+{
+    [SerializeField] public int damage;
+    [SerializeField] public int knockbackPower;
+    [SerializeField] public Vector2 knockbackAngle;
+    [SerializeField] public Vector2 velocityModifier;
+    [SerializeField] public int velocityType;
+}
+
 public class StateManager : MonoBehaviour
 {
     public Dictionary<string, State> states = new Dictionary<string, State>();
     private State currentState;
+
+    // this is how I wrote this system, unfortunately
+    [SerializeField]
+    public attackData highKickData = new attackData
+    {
+        damage = 15,
+        knockbackPower = 20,
+        knockbackAngle = new Vector2(1, 1),
+        velocityModifier = new Vector2(50, -1),
+        velocityType = 1,
+    };
+
+    [SerializeField]
+    public attackData highPunchData = new attackData
+    {
+        damage = 10,
+        knockbackPower = 10,
+        knockbackAngle = new Vector2(0.5f, 1),
+        velocityModifier = new Vector2(15, -1),
+        velocityType = 3,
+    };
+    [SerializeField]
+    public attackData lowKickData = new attackData
+    {
+        damage = 10,
+        knockbackPower = 20,
+        knockbackAngle = new Vector2(0.5f, 1),
+        velocityModifier = new Vector2(25, -1),
+        velocityType = 1,
+    };
+    [SerializeField] public attackData lowPunchData = new attackData {
+        damage = 10,
+        knockbackPower = 10,
+        knockbackAngle = new Vector2(1, 0.2f),
+        velocityModifier = new Vector2(0, -1),
+        velocityType = 0,
+    };
 
     public void Init(Fighter fighter)
     {
@@ -48,10 +95,34 @@ public class StateManager : MonoBehaviour
             state.Value.Init(this, states, fighter, state.Key);
         }
 
-        kickHigh.SetAttackData(15, 20, new Vector2(1, 1), new Vector2(50, -1), 1);
-        punchHigh.SetAttackData(10, 10, new Vector2(1, 0.5f), new Vector2(15, -1), 3);
-        kickLow.SetAttackData(10, 20, new Vector2(0.5f, 1), new Vector2(25, -1), 1);
-        punchLow.SetAttackData(10, 10, new Vector2(1, 0.2f), new Vector2(0, -1), 0);
+        kickHigh.SetAttackData(
+            highKickData.damage,
+            highKickData.knockbackPower,
+            highKickData.knockbackAngle,
+            highKickData.velocityModifier,
+            highKickData.velocityType
+        );
+        punchHigh.SetAttackData(
+            highPunchData.damage,
+            highPunchData.knockbackPower,
+            highPunchData.knockbackAngle,
+            highPunchData.velocityModifier,
+            highPunchData.velocityType
+        );
+        kickLow.SetAttackData(
+            lowKickData.damage,
+            lowKickData.knockbackPower,
+            lowKickData.knockbackAngle,
+            lowKickData.velocityModifier,
+            lowKickData.velocityType
+        );
+        punchLow.SetAttackData(
+            lowPunchData.damage,
+            lowPunchData.knockbackPower,
+            lowPunchData.knockbackAngle,
+            lowPunchData.velocityModifier,
+            lowPunchData.velocityType
+        );
 
         currentState = states["idle"];
     }
