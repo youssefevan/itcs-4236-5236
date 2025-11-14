@@ -4,8 +4,8 @@ using UnityEditor.Rendering.LookDev;
 using UnityEngine;
 using UnityEngine.SocialPlatforms.Impl;
 
-[CreateAssetMenu(menuName = "AIAction/ActionBlock")]
-public class ActionBlock : AIAction
+[CreateAssetMenu(menuName = "AIAction/ActionLowBlock")]
+public class ActionLowBlock : AIAction
 {
     public override void EvaluateContext(Fighter f, AIInputController controller)
     {
@@ -22,11 +22,11 @@ public class ActionBlock : AIAction
 
         if (f.opponentState is Crouch)
         {
-            scores.Add(0.5f);
+            scores.Add(1.0f);
         }
         else
         {
-            scores.Add(1.0f);
+            scores.Add(0.5f);
         }
 
         if (!f.opponentApproaching)
@@ -47,6 +47,6 @@ public class ActionBlock : AIAction
 
     public override void Execute(Fighter f, AIInputController controller)
     {
-        controller.SetInputs(0, 0, false, false, true, false, false, false);
+        controller.SetInputs(0, 0, false, true, true, false, false, false);
     }
 }

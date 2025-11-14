@@ -32,6 +32,11 @@ public class Crouch : State
             return states["jumpsquat"];
         }
 
+        if (fighter.inputType.blockInput)
+        {
+            return states["lowBlock"];
+        }
+
         if (fighter.inputType.kickInput)
         {
             return states["kickLow"];

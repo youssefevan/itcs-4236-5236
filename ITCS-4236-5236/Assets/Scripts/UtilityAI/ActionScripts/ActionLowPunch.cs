@@ -26,9 +26,9 @@ public class ActionLowPunch : AIAction
             scores.Add(0.5f);
         }
 
-        if (f.opponentState is Block)
+        if (f.opponentState is LowBlock)
         {
-            scores.Add(0.7f);
+            scores.Add(0.3f);
         }
     }
 

@@ -203,13 +203,24 @@ public class Fighter : MonoBehaviour
         incomingKBAngle = hb.knockback_angle * new Vector2(-facing, 1);
         incomingKBPower = hb.knockback_power;
 
-        if (stateManager.GetCurrentState() != stateManager.states["block"])
-        {
+        if (stateManager.GetCurrentState() != stateManager.states["block"] &&
+            stateManager.GetCurrentState() != stateManager.states["lowBlock"]) {
             stateManager.ChangeState(stateManager.states["hitstun"]);
         }
-        else
-        {
-            ((Block)stateManager.GetCurrentState()).BlockHit();
+        else if (hb.is_low == false) {
+            if (stateManager.GetCurrentState() == stateManager.states["block"])
+            {
+                ((Block)stateManager.GetCurrentState()).BlockHit();
+            } else {
+                stateManager.ChangeState(stateManager.states["hitstun"]);
+            }
+        } else if (hb.is_low == true) {
+            if (stateManager.GetCurrentState() == stateManager.states["lowBlock"])
+            {
+                ((Block)stateManager.GetCurrentState()).BlockHit();
+            } else {
+                stateManager.ChangeState(stateManager.states["hitstun"]);
+            }
         }
     }
 

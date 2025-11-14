@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Block : State
+public class LowBlock : Block
 {
     public override State? PhysicsUpdate()
     {
@@ -24,12 +24,12 @@ public class Block : State
 
         if (!fighter.inputType.blockInput)
         {
-            return states["idle"];
+            return states["crouch"];
         }
 
-        if (fighter.inputType.crouchInput)
+        if (!fighter.inputType.crouchInput)
         {
-            return states["lowBlock"];
+            return states["block"];
         }
 
         if (fighter.inputType.jumpInput)

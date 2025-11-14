@@ -26,9 +26,9 @@ public class ActionLowKick : AIAction
             scores.Add(0.5f);
         }
 
-        if (f.opponentState is Block)
+        if (f.opponentState is LowBlock)
         {
-            scores.Add(0.8f);
+            scores.Add(0.4f);
         }
 
         if (!f.opponentApproaching) {

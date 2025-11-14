@@ -9,6 +9,7 @@ public struct attackData
     [SerializeField] public Vector2 knockbackAngle;
     [SerializeField] public Vector2 velocityModifier;
     [SerializeField] public int velocityType;
+    [SerializeField] public bool isLow;
 }
 
 public class StateManager : MonoBehaviour
@@ -25,6 +26,7 @@ public class StateManager : MonoBehaviour
         knockbackAngle = new Vector2(1, 1),
         velocityModifier = new Vector2(50, -1),
         velocityType = 1,
+        isLow = false,
     };
 
     [SerializeField]
@@ -35,6 +37,7 @@ public class StateManager : MonoBehaviour
         knockbackAngle = new Vector2(0.5f, 1),
         velocityModifier = new Vector2(15, -1),
         velocityType = 3,
+        isLow = false,
     };
     [SerializeField]
     public attackData lowKickData = new attackData
@@ -44,6 +47,7 @@ public class StateManager : MonoBehaviour
         knockbackAngle = new Vector2(0.5f, 1),
         velocityModifier = new Vector2(25, -1),
         velocityType = 1,
+        isLow = true,
     };
     [SerializeField] public attackData lowPunchData = new attackData {
         damage = 10,
@@ -51,6 +55,7 @@ public class StateManager : MonoBehaviour
         knockbackAngle = new Vector2(1, 0.2f),
         velocityModifier = new Vector2(0, -1),
         velocityType = 0,
+        isLow = true,
     };
 
     public void Init(Fighter fighter)
@@ -63,6 +68,7 @@ public class StateManager : MonoBehaviour
         State land = new Land();
         State jumpsquat = new Jumpsquat();
         State block = new Block();
+        State lowBlock = new LowBlock();
         State crouch = new Crouch();
         State hitstun = new Hitstun();
         State knockback = new Knockback();
@@ -81,6 +87,7 @@ public class StateManager : MonoBehaviour
         states.Add("jumpsquat", jumpsquat);
         states.Add("block", block);
         states.Add("crouch", crouch);
+        states.Add("lowBlock", lowBlock);
         states.Add("hitstun", hitstun);
         states.Add("knockback", knockback);
         states.Add("dodge", dodge);
@@ -100,28 +107,32 @@ public class StateManager : MonoBehaviour
             highKickData.knockbackPower,
             highKickData.knockbackAngle,
             highKickData.velocityModifier,
-            highKickData.velocityType
+            highKickData.velocityType,
+            highKickData.isLow
         );
         punchHigh.SetAttackData(
             highPunchData.damage,
             highPunchData.knockbackPower,
             highPunchData.knockbackAngle,
             highPunchData.velocityModifier,
-            highPunchData.velocityType
+            highPunchData.velocityType,
+            highPunchData.isLow
         );
         kickLow.SetAttackData(
             lowKickData.damage,
             lowKickData.knockbackPower,
             lowKickData.knockbackAngle,
             lowKickData.velocityModifier,
-            lowKickData.velocityType
+            lowKickData.velocityType,
+            lowKickData.isLow
         );
         punchLow.SetAttackData(
             lowPunchData.damage,
             lowPunchData.knockbackPower,
             lowPunchData.knockbackAngle,
             lowPunchData.velocityModifier,
-            lowPunchData.velocityType
+            lowPunchData.velocityType,
+            lowPunchData.isLow
         );
 
         currentState = states["idle"];
