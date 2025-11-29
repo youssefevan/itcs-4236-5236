@@ -36,6 +36,8 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
     public bool debugStates = false;
+    public int maxHealth = 100;
+    [HideInInspector] public int currentHealth;
 
     [Header("---Ground Check---")]
     public LayerMask groundLayer;
@@ -63,6 +65,7 @@ public class Fighter : MonoBehaviour
         sprite = GetComponent<SpriteRenderer>();
         collider = GetComponent<CapsuleCollider2D>();
 
+        currentHealth = maxHealth;
         stateManager = GetComponent<StateManager>();
         stateManager.Init(this);
     }
@@ -205,23 +208,29 @@ public class Fighter : MonoBehaviour
 
         if (stateManager.GetCurrentState() != stateManager.states["block"] &&
             stateManager.GetCurrentState() != stateManager.states["lowBlock"]) {
-            stateManager.ChangeState(stateManager.states["hitstun"]);
+            GetHurt(hb.damage);
         }
         else if (hb.is_low == false) {
             if (stateManager.GetCurrentState() == stateManager.states["block"])
             {
                 ((Block)stateManager.GetCurrentState()).BlockHit();
             } else {
-                stateManager.ChangeState(stateManager.states["hitstun"]);
+                GetHurt(hb.damage);
             }
         } else if (hb.is_low == true) {
             if (stateManager.GetCurrentState() == stateManager.states["lowBlock"])
             {
                 ((Block)stateManager.GetCurrentState()).BlockHit();
             } else {
-                stateManager.ChangeState(stateManager.states["hitstun"]);
+                GetHurt(hb.damage);
             }
         }
+    }
+
+    public void GetHurt(int damage)
+    {
+        stateManager.ChangeState(stateManager.states["hitstun"]);
+        currentHealth -= damage;
     }
 
     public void PerformHit()

@@ -1,0 +1,897 @@
+fileFormatVersion: 2
+guid: c2279c024b0da3a4e85562c014d506ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1610305349962857578
+    second: Jungle Cannibal Sprite Sheet_0
+  - first:
+      213: 6731084923513266370
+    second: Jungle Cannibal Sprite Sheet_1
+  - first:
+      213: -7397877854632764451
+    second: Jungle Cannibal Sprite Sheet_2
+  - first:
+      213: 6074059136721033345
+    second: Jungle Cannibal Sprite Sheet_3
+  - first:
+      213: -679582518665563074
+    second: Jungle Cannibal Sprite Sheet_4
+  - first:
+      213: 5032957872300003803
+    second: Jungle Cannibal Sprite Sheet_5
+  - first:
+      213: -6394830023399889345
+    second: Jungle Cannibal Sprite Sheet_6
+  - first:
+      213: -2252157733481455268
+    second: Jungle Cannibal Sprite Sheet_7
+  - first:
+      213: 2961636224520048790
+    second: Jungle Cannibal Sprite Sheet_8
+  - first:
+      213: 5735356185704961108
+    second: Jungle Cannibal Sprite Sheet_9
+  - first:
+      213: 6481924827972300005
+    second: Jungle Cannibal Sprite Sheet_10
+  - first:
+      213: -7985581178198769191
+    second: Jungle Cannibal Sprite Sheet_11
+  - first:
+      213: 4468885259793966658
+    second: Jungle Cannibal Sprite Sheet_12
+  - first:
+      213: 2862380440980486424
+    second: Jungle Cannibal Sprite Sheet_13
+  - first:
+      213: -6467686012161366823
+    second: Jungle Cannibal Sprite Sheet_14
+  - first:
+      213: -8585479138032079384
+    second: Jungle Cannibal Sprite Sheet_15
+  - first:
+      213: 387934596154989773
+    second: Jungle Cannibal Sprite Sheet_16
+  - first:
+      213: 7715731084486027253
+    second: Jungle Cannibal Sprite Sheet_17
+  - first:
+      213: 744355576400162718
+    second: Jungle Cannibal Sprite Sheet_18
+  - first:
+      213: -6458350483143612858
+    second: Jungle Cannibal Sprite Sheet_19
+  - first:
+      213: 7688274918105236464
+    second: Jungle Cannibal Sprite Sheet_20
+  - first:
+      213: 5282615390591525453
+    second: Jungle Cannibal Sprite Sheet_21
+  - first:
+      213: 309085914142408947
+    second: Jungle Cannibal Sprite Sheet_22
+  - first:
+      213: -891732226272108457
+    second: Jungle Cannibal Sprite Sheet_23
+  - first:
+      213: 4127526240660222
+    second: Jungle Cannibal Sprite Sheet_24
+  - first:
+      213: 8762536263495525061
+    second: Jungle Cannibal Sprite Sheet_25
+  - first:
+      213: -6942860168027037842
+    second: Jungle Cannibal Sprite Sheet_26
+  - first:
+      213: 1695822430722267599
+    second: Jungle Cannibal Sprite Sheet_27
+  - first:
+      213: 7526791642815333374
+    second: Jungle Cannibal Sprite Sheet_28
+  - first:
+      213: 1002907676763379642
+    second: Jungle Cannibal Sprite Sheet_29
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 7365
+        width: 565
+        height: 605
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6c727c1f24f85610800000000000000
+      internalID: 1610305349962857578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 7365
+        width: 565
+        height: 599
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c0eefa331e996d50800000000000000
+      internalID: 6731084923513266370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 2332
+        y: 7365
+        width: 563
+        height: 595
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb92ee6945755990800000000000000
+      internalID: -7397877854632764451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 2958
+        y: 7365
+        width: 571
+        height: 589
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18819f46a946b4450800000000000000
+      internalID: 6074059136721033345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 6677
+        width: 507
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e34bf53cc43a196f0800000000000000
+      internalID: -679582518665563074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 6667
+        width: 533
+        height: 499
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd192f3e488a8d540800000000000000
+      internalID: 5032957872300003803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 2326
+        y: 6667
+        width: 511
+        height: 509
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f362f3899fff047a0800000000000000
+      internalID: -6394830023399889345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 3052
+        y: 6665
+        width: 533
+        height: 501
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5160bd497abeb0e0800000000000000
+      internalID: -2252157733481455268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 5903
+        width: 573
+        height: 577
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 690527c6478d91920800000000000000
+      internalID: 2961636224520048790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1502
+        y: 5891
+        width: 513
+        height: 557
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 454984d4014189f40800000000000000
+      internalID: 5735356185704961108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 5891
+        width: 451
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ece210d94c64f950800000000000000
+      internalID: 6481924827972300005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 5895
+        width: 385
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d1ca645a348d2190800000000000000
+      internalID: -7985581178198769191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 4425
+        width: 539
+        height: 467
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 246aff3777ba40e30800000000000000
+      internalID: 4468885259793966658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 4465
+        width: 535
+        height: 587
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 819faa478d739b720800000000000000
+      internalID: 2862380440980486424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 2384
+        y: 4713
+        width: 375
+        height: 447
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d4eb56d6d92e36a0800000000000000
+      internalID: -6467686012161366823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 4671
+        width: 557
+        height: 689
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ed221736304ad880800000000000000
+      internalID: -8585479138032079384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 3673
+        width: 649
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc17e7b578326500800000000000000
+      internalID: 387934596154989773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1662
+        y: 3671
+        width: 431
+        height: 667
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7aa39aa88c31b60800000000000000
+      internalID: 7715731084486027253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 3671
+        width: 725
+        height: 639
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9fa9e5f37b745a00800000000000000
+      internalID: 744355576400162718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2934
+        y: 3671
+        width: 711
+        height: 629
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 646a04114745f56a0800000000000000
+      internalID: -6458350483143612858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 3009
+        width: 461
+        height: 607
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f34535cd4d32ba60800000000000000
+      internalID: 7688274918105236464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1340
+        y: 2929
+        width: 593
+        height: 641
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d42283195be9f4940800000000000000
+      internalID: 5282615390591525453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 2929
+        width: 625
+        height: 645
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f0098550081a4400800000000000000
+      internalID: 309085914142408947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 2929
+        width: 585
+        height: 645
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 750684ac34eef93f0800000000000000
+      internalID: -891732226272108457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 2195
+        width: 519
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efa206796f9ae0000800000000000000
+      internalID: 4127526240660222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 2199
+        width: 565
+        height: 621
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c221254e48ca9970800000000000000
+      internalID: 8762536263495525061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 2266
+        y: 2195
+        width: 759
+        height: 591
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f1a87467106af90800000000000000
+      internalID: -6942860168027037842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 1445
+        width: 537
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc917511485c88710800000000000000
+      internalID: 1695822430722267599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1432
+        y: 1439
+        width: 739
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef30368de19847860800000000000000
+      internalID: 7526791642815333374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jungle Cannibal Sprite Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2206
+        y: 1439
+        width: 737
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab75ef7e73b0bed00800000000000000
+      internalID: 1002907676763379642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Jungle Cannibal Sprite Sheet_0: 1610305349962857578
+      Jungle Cannibal Sprite Sheet_1: 6731084923513266370
+      Jungle Cannibal Sprite Sheet_10: 6481924827972300005
+      Jungle Cannibal Sprite Sheet_11: -7985581178198769191
+      Jungle Cannibal Sprite Sheet_12: 4468885259793966658
+      Jungle Cannibal Sprite Sheet_13: 2862380440980486424
+      Jungle Cannibal Sprite Sheet_14: -6467686012161366823
+      Jungle Cannibal Sprite Sheet_15: -8585479138032079384
+      Jungle Cannibal Sprite Sheet_16: 387934596154989773
+      Jungle Cannibal Sprite Sheet_17: 7715731084486027253
+      Jungle Cannibal Sprite Sheet_18: 744355576400162718
+      Jungle Cannibal Sprite Sheet_19: -6458350483143612858
+      Jungle Cannibal Sprite Sheet_2: -7397877854632764451
+      Jungle Cannibal Sprite Sheet_20: 7688274918105236464
+      Jungle Cannibal Sprite Sheet_21: 5282615390591525453
+      Jungle Cannibal Sprite Sheet_22: 309085914142408947
+      Jungle Cannibal Sprite Sheet_23: -891732226272108457
+      Jungle Cannibal Sprite Sheet_24: 4127526240660222
+      Jungle Cannibal Sprite Sheet_25: 8762536263495525061
+      Jungle Cannibal Sprite Sheet_26: -6942860168027037842
+      Jungle Cannibal Sprite Sheet_27: 1695822430722267599
+      Jungle Cannibal Sprite Sheet_28: 7526791642815333374
+      Jungle Cannibal Sprite Sheet_29: 1002907676763379642
+      Jungle Cannibal Sprite Sheet_3: 6074059136721033345
+      Jungle Cannibal Sprite Sheet_4: -679582518665563074
+      Jungle Cannibal Sprite Sheet_5: 5032957872300003803
+      Jungle Cannibal Sprite Sheet_6: -6394830023399889345
+      Jungle Cannibal Sprite Sheet_7: -2252157733481455268
+      Jungle Cannibal Sprite Sheet_8: 2961636224520048790
+      Jungle Cannibal Sprite Sheet_9: 5735356185704961108
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
