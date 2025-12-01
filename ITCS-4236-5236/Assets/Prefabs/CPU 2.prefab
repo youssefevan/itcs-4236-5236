@@ -93,12 +93,32 @@ PrefabInstance:
       value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: lowPunchData.damage
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: highPunchData.damage
+      value: 22
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: lowKickData.velocityType
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: highKickData.knockbackPower
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: lowPunchData.knockbackPower
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: highPunchData.knockbackPower
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: highKickData.knockbackAngle.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8130655958944283847, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: lowKickData.velocityModifier.x

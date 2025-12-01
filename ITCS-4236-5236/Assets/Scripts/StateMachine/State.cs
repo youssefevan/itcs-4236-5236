@@ -19,8 +19,7 @@ public abstract class State
     public virtual void Enter()
     {
         fighter.animator.Play(name);
-        fighter.attackCompleted = false;
-        //Debug.Log(fighter + ": " + name);
+        Debug.Log(fighter + ": " + name);
     }
 
     public virtual State? PhysicsUpdate()

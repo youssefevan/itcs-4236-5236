@@ -29,6 +29,10 @@ PrefabInstance:
       value: -0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4216916737194913335, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
+      propertyPath: lowKickData.damage
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4216916737194913335, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
       propertyPath: highKickData.damage
       value: 30
       objectReference: {fileID: 0}
@@ -63,6 +67,10 @@ PrefabInstance:
     - target: {fileID: 6137012709444704338, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137012709444704338, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
+      propertyPath: debugStates
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6137012709444704338, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
       propertyPath: aiControlled

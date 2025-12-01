@@ -13,7 +13,7 @@ public class AttackGround : Attack
 
     public override State? PhysicsUpdate()
     {
-        base.PhysicsUpdate();
+        
 
         Vector2 velocity = fighter.rb.linearVelocity;
 
@@ -46,7 +46,7 @@ public class AttackGround : Attack
             fighter.rb.linearVelocity = Vector2.zero;
         }
 
-        return null;
+        return base.PhysicsUpdate();
     }
 
     public override void ApplyVelocity()

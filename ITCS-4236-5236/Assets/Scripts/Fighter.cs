@@ -20,7 +20,6 @@ public class Fighter : MonoBehaviour
     [Header("---Input---")]
     public IFighterInput inputType { get; set; }
     public bool aiControlled;
-    [HideInInspector] public bool attackCompleted = false;
     [HideInInspector] public bool inHitStop = false;
     [HideInInspector] public float incomingStun = 0f;
     [HideInInspector] public Vector2 incomingKBAngle = Vector2.zero;
@@ -36,8 +35,9 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
     public bool debugStates = false;
-    public int maxHealth = 500;
+    [HideInInspector] public int maxHealth = 700;
     [HideInInspector] public int currentHealth;
+    public Camera cam;
 
     [Header("---Ground Check---")]
     public LayerMask groundLayer;
@@ -79,6 +79,7 @@ public class Fighter : MonoBehaviour
         else
         {
             inputType = GetComponent<PlayerInputController>();
+            
         }
     }
 
@@ -106,6 +107,23 @@ public class Fighter : MonoBehaviour
                 aiFrame = 0;
             }
         }
+    }
+
+    void LateUpdate()
+    {
+        float halfHeight = cam.orthographicSize;
+        float halfWidth = cam.aspect * halfHeight;
+
+        float camX = cam.transform.position.x;
+
+        float leftBound = camX - halfWidth + 1.0f;
+        float rightBound = camX + halfWidth - 1.0f;
+
+        Vector3 pos = transform.position;
+
+        pos.x = Mathf.Clamp(pos.x, leftBound, rightBound);
+
+        transform.position = pos;
     }
 
     private void CalculateContext()
@@ -254,11 +272,6 @@ public class Fighter : MonoBehaviour
     public bool IsGrounded()
     {
         return Physics2D.OverlapBox(groundCheckPosition.position, groundCheckSize, 0, groundLayer);
-    }
-
-    public void AttackCompleted()
-    {
-        stateManager.ChangeState(stateManager.states["idle"]);
     }
 
     public void ApplyAttackVelocity()

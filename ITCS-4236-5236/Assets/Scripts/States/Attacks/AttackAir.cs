@@ -47,12 +47,6 @@ public class AttackAir : Attack
             fighter.rb.linearVelocity = Vector2.zero;
         }
 
-
-        if (fighter.attackCompleted)
-        {
-            return states["idle"];
-        }
-
         return null;
     }
 

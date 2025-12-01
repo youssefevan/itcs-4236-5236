@@ -33,5 +33,20 @@ public class Attack : State
         fighter.hitbox.is_low = is_low;
     }
 
+    public override State? PhysicsUpdate()
+    {
+        base.PhysicsUpdate();
+
+        AnimatorStateInfo info = fighter.animator.GetCurrentAnimatorStateInfo(0);
+
+        if (info.normalizedTime >= 1f)
+        {
+            return states["idle"];
+        }
+
+        return null;
+    }
+
+
     public virtual void ApplyVelocity() { }
 }

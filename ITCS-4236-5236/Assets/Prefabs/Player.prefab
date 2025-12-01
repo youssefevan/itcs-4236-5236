@@ -126,6 +126,7 @@ MonoBehaviour:
   damage: 0
   knockback_power: 0
   knockback_angle: {x: 0, y: 0}
+  is_low: 0
 --- !u!1 &8753867314044789599
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,7 +406,6 @@ MonoBehaviour:
   hurtbox: {fileID: 7780419273169004902}
   opponent: {fileID: 0}
   aiControlled: 0
-  attackCompleted: 0
   inHitStop: 0
   incomingStun: 0
   incomingKBAngle: {x: 0, y: 0}
@@ -419,6 +419,9 @@ MonoBehaviour:
   upGravity: 30
   downGravity: 60
   debugStates: 0
+  maxHealth: 700
+  currentHealth: 0
+  cam: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -454,28 +457,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::StateManager
   highKickData:
     damage: 15
-    knockbackPower: 20
+    knockbackPower: 15
     knockbackAngle: {x: 1, y: 1}
     velocityModifier: {x: 50, y: -1}
     velocityType: 1
+    isLow: 0
   highPunchData:
-    damage: 10
-    knockbackPower: 10
+    damage: 20
+    knockbackPower: 20
     knockbackAngle: {x: 0.5, y: 1}
     velocityModifier: {x: 15, y: -1}
     velocityType: 3
+    isLow: 0
   lowKickData:
-    damage: 10
+    damage: 12
     knockbackPower: 20
-    knockbackAngle: {x: 0.5, y: 1}
+    knockbackAngle: {x: 0.2, y: 1}
     velocityModifier: {x: 25, y: -1}
     velocityType: 1
+    isLow: 1
   lowPunchData:
-    damage: 10
+    damage: 7
     knockbackPower: 10
     knockbackAngle: {x: 1, y: 0.2}
     velocityModifier: {x: 0, y: -1}
     velocityType: 0
+    isLow: 1
 --- !u!114 &1287399024013401653
 MonoBehaviour:
   m_ObjectHideFlags: 0
