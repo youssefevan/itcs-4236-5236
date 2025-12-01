@@ -36,7 +36,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
     public bool debugStates = false;
-    public int maxHealth = 100;
+    public int maxHealth = 500;
     [HideInInspector] public int currentHealth;
 
     [Header("---Ground Check---")]
