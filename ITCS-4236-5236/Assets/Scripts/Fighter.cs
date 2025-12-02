@@ -35,7 +35,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
     public bool debugStates = false;
-    [HideInInspector] public int maxHealth = 700;
+    [HideInInspector] public int maxHealth = 500;
     [HideInInspector] public int currentHealth;
     public Camera cam;
 
@@ -201,6 +201,11 @@ public class Fighter : MonoBehaviour
         }
     }
 
+    public void Die()
+    {
+        stateManager.ChangeState(stateManager.states["dead"]);
+    }
+
     public void FaceOpponent()
     {
         if (opponent)
@@ -220,6 +225,11 @@ public class Fighter : MonoBehaviour
 
     public void RecieveHit(Hitbox hb)
     {
+        if (stateManager.GetCurrentState() == stateManager.states["dead"])
+        {
+            return;
+        }
+
         incomingStun = hb.damage * 0.02f;
         incomingKBAngle = hb.knockback_angle * new Vector2(-facing, 1);
         incomingKBPower = hb.knockback_power;
@@ -249,6 +259,10 @@ public class Fighter : MonoBehaviour
     {
         stateManager.ChangeState(stateManager.states["hitstun"]);
         currentHealth -= damage;
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
     }
 
     public void PerformHit()

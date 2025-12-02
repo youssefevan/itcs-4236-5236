@@ -73,6 +73,7 @@ public class StateManager : MonoBehaviour
         State hitstun = new Hitstun();
         State knockback = new Knockback();
         State dodge = new Dodge();
+        State dead = new Dead();
 
         AttackGround kickHigh = new AttackGround();
         AttackGround punchHigh = new AttackGround();
@@ -91,6 +92,7 @@ public class StateManager : MonoBehaviour
         states.Add("hitstun", hitstun);
         states.Add("knockback", knockback);
         states.Add("dodge", dodge);
+        states.Add("dead", dead);
 
         states.Add("kickHigh", kickHigh);
         states.Add("punchHigh", punchHigh);
