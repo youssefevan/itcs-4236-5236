@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 240660237119260394, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 68589ab9b8e676a47a1ba39cb74bf93b, type: 3}
+      objectReference: {fileID: 8300000, guid: c32e02913ee028040bdf9caf86520d08, type: 3}
     - target: {fileID: 2437393259363984001, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -88,6 +88,10 @@ PrefabInstance:
       propertyPath: highPunchData.velocityModifier.x
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8850334448477114805, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: da343d5d81acf7143b048f0fcbf099b8, type: 3}
     - target: {fileID: 9050881205656088066, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: m_Size.y
       value: 0.7079805
