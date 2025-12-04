@@ -12,6 +12,7 @@ public class Dodge : State
     public override void Enter()
     {
         base.Enter();
+        fighter.StartCoroutine(fighter.DodgeCooldown());
         fighter.PlaySwoosh();
 
         currentTime = 0;

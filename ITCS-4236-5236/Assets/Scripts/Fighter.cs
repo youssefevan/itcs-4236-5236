@@ -62,6 +62,7 @@ public class Fighter : MonoBehaviour
     private int aiFrame = 0;
     public Queue<AIAction> previousActions = new Queue<AIAction>();
     public int maxPrevActions = 4;
+    public bool canDodge = true;
 
     void Awake()
     {
@@ -293,6 +294,13 @@ public class Fighter : MonoBehaviour
 
         hitbox.enabled = false;
         StartCoroutine(ApplyHitStop(hitbox.knockback_power / 120f));
+    }
+
+    public IEnumerator DodgeCooldown()
+    {
+        canDodge = false;
+        yield return new WaitForSeconds(0.5f);
+        canDodge = true;
     }
 
     public IEnumerator ApplyHitStop(float time)

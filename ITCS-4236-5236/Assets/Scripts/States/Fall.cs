@@ -23,7 +23,7 @@ public class Fall : State
             return states["land"];
         }
 
-        if (fighter.inputType.dodgeInput)
+        if (fighter.inputType.dodgeInput && fighter.canDodge)
         {
             return states["dodge"];
         }

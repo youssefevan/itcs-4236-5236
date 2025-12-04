@@ -38,7 +38,7 @@ public class Jump : State
             return states["fall"];
         }
 
-        if (fighter.inputType.dodgeInput)
+        if (fighter.inputType.dodgeInput && fighter.canDodge)
         {
             return states["dodge"];
         }
