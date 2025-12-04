@@ -12,6 +12,8 @@ public class Dodge : State
     public override void Enter()
     {
         base.Enter();
+        fighter.PlaySwoosh();
+
         currentTime = 0;
         fighter.sprite.color = Color.cyan;
         fighter.collider.enabled = false;

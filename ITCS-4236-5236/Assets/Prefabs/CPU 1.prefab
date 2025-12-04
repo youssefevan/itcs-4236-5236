@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: highPunchData.velocityModifier.x
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 5262004127614997530, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 68589ab9b8e676a47a1ba39cb74bf93b, type: 3}
     - target: {fileID: 6137012709444704338, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
       propertyPath: landTime
       value: 0.1

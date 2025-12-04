@@ -12,6 +12,9 @@ public class Hitstun : State
     public override void Enter()
     {
         base.Enter();
+        fighter.hurtSFX.pitch = Random.Range(0.85f, 1.0f);
+        fighter.hurtSFX.Play();
+
         stunTime = fighter.incomingStun;
         currentTime = 0;
         currentFrame = 0;

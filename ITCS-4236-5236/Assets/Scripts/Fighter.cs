@@ -17,6 +17,12 @@ public class Fighter : MonoBehaviour
     public Hurtbox hurtbox;
     public Fighter opponent;
 
+    public AudioSource punchSFX;
+    public AudioSource kickSFX;
+    public AudioSource jumpSFX;
+    public AudioSource hurtSFX;
+    public AudioSource swooshSFX;
+
     [Header("---Input---")]
     public IFighterInput inputType { get; set; }
     public bool aiControlled;
@@ -255,6 +261,12 @@ public class Fighter : MonoBehaviour
         }
     }
 
+    public void PlaySwoosh()
+    {
+        swooshSFX.pitch = UnityEngine.Random.Range(0.8f, 1.2f);
+        swooshSFX.Play();
+    }
+
     public void GetHurt(int damage)
     {
         stateManager.ChangeState(stateManager.states["hitstun"]);
@@ -267,8 +279,20 @@ public class Fighter : MonoBehaviour
 
     public void PerformHit()
     {
-        StartCoroutine(ApplyHitStop(hitbox.knockback_power / 120f));
+        if (stateManager.GetCurrentState() == stateManager.states["kickLow"] ||
+            stateManager.GetCurrentState() == stateManager.states["kickHigh"])
+        {
+            kickSFX.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+            kickSFX.Play();
+        } else if (stateManager.GetCurrentState() == stateManager.states["punchLow"] ||
+                   stateManager.GetCurrentState() == stateManager.states["punchHigh"])
+        {
+            punchSFX.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
+            punchSFX.Play();
+        }
+
         hitbox.enabled = false;
+        StartCoroutine(ApplyHitStop(hitbox.knockback_power / 120f));
     }
 
     public IEnumerator ApplyHitStop(float time)
