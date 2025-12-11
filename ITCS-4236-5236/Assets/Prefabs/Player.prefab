@@ -1106,7 +1106,7 @@ MonoBehaviour:
   upGravity: 30
   downGravity: 60
   debugStates: 0
-  maxHealth: 700
+  maxHealth: 500
   currentHealth: 0
   cam: {fileID: 0}
   groundLayer:
@@ -1130,6 +1130,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 82a1a1ab60b233046820f37dbb84cb79, type: 2}
   - {fileID: 11400000, guid: 4f195b44e8273ad42b95cc500bd66f0b, type: 2}
   maxPrevActions: 5
+  canDodge: 1
 --- !u!114 &4216916737194913335
 MonoBehaviour:
   m_ObjectHideFlags: 0

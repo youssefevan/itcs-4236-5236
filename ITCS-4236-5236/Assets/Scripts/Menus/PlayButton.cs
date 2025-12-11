@@ -5,6 +5,6 @@ public class PlayButton : MonoBehaviour
     public void OnClick()
     {
         Debug.Log("Play Button Clicked");
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level1");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Cutscene1");
     }
 }

@@ -1,6 +1,7 @@
 using Mono.Cecil.Cil;
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class Dead : State
 {
@@ -20,11 +21,16 @@ public class Dead : State
 
         velocity.x = Mathf.Lerp(
             velocity.x, 0f,
-            fighter.groundFriction * Time.fixedDeltaTime
+            fighter.airFriction * Time.fixedDeltaTime
         );
         velocity.y = -1f;
 
         fighter.rb.linearVelocity = velocity;
+
+        if (fighter.currentHealth > 0)
+        {
+            return states["idle"];
+        }
 
         return null;
     }

@@ -17,6 +17,10 @@ PrefabInstance:
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2268573281666583202, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: maxHealth
+      value: 450
+      objectReference: {fileID: 0}
+    - target: {fileID: 2268573281666583202, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: jumpsquatTime
       value: 0.2
       objectReference: {fileID: 0}

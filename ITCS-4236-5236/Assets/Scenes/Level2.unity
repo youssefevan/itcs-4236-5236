@@ -282,6 +282,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 290375568361099814, guid: 0ece573805da36848b25cd4b953654e5, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1098441285}
+    - target: {fileID: 290375568361099814, guid: 0ece573805da36848b25cd4b953654e5, type: 3}
+      propertyPath: opponent
+      value: 
+      objectReference: {fileID: 1256693478}
+    - target: {fileID: 290375568361099814, guid: 0ece573805da36848b25cd4b953654e5, type: 3}
+      propertyPath: nextScene
+      value: Cutscene3
+      objectReference: {fileID: 0}
     - target: {fileID: 3024345832944540906, guid: 0ece573805da36848b25cd4b953654e5, type: 3}
       propertyPath: m_Name
       value: HealthUI

@@ -73,6 +73,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6137012709444704338, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
+      propertyPath: maxHealth
+      value: 350
+      objectReference: {fileID: 0}
+    - target: {fileID: 6137012709444704338, guid: 2d821009eb41eb048b3719abd014015a, type: 3}
       propertyPath: debugStates
       value: 0
       objectReference: {fileID: 0}

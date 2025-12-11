@@ -41,7 +41,7 @@ public class Fighter : MonoBehaviour
     [HideInInspector] public float upGravity = 30f;
     [HideInInspector] public float downGravity = 60f;
     public bool debugStates = false;
-    [HideInInspector] public int maxHealth = 500;
+    public int maxHealth = 500;
     [HideInInspector] public int currentHealth;
     public Camera cam;
 
@@ -86,7 +86,7 @@ public class Fighter : MonoBehaviour
         else
         {
             inputType = GetComponent<PlayerInputController>();
-            
+
         }
     }
 
@@ -242,21 +242,29 @@ public class Fighter : MonoBehaviour
         incomingKBPower = hb.knockback_power;
 
         if (stateManager.GetCurrentState() != stateManager.states["block"] &&
-            stateManager.GetCurrentState() != stateManager.states["lowBlock"]) {
+            stateManager.GetCurrentState() != stateManager.states["lowBlock"])
+        {
             GetHurt(hb.damage);
         }
-        else if (hb.is_low == false) {
+        else if (hb.is_low == false)
+        {
             if (stateManager.GetCurrentState() == stateManager.states["block"])
             {
                 ((Block)stateManager.GetCurrentState()).BlockHit();
-            } else {
+            }
+            else
+            {
                 GetHurt(hb.damage);
             }
-        } else if (hb.is_low == true) {
+        }
+        else if (hb.is_low == true)
+        {
             if (stateManager.GetCurrentState() == stateManager.states["lowBlock"])
             {
                 ((Block)stateManager.GetCurrentState()).BlockHit();
-            } else {
+            }
+            else
+            {
                 GetHurt(hb.damage);
             }
         }
@@ -285,7 +293,8 @@ public class Fighter : MonoBehaviour
         {
             kickSFX.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
             kickSFX.Play();
-        } else if (stateManager.GetCurrentState() == stateManager.states["punchLow"] ||
+        }
+        else if (stateManager.GetCurrentState() == stateManager.states["punchLow"] ||
                    stateManager.GetCurrentState() == stateManager.states["punchHigh"])
         {
             punchSFX.pitch = UnityEngine.Random.Range(0.9f, 1.1f);
