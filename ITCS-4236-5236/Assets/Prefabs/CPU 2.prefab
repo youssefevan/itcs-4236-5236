@@ -128,6 +128,10 @@ PrefabInstance:
       propertyPath: lowKickData.velocityModifier.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8850334448477114805, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 164d8b71712e6cf42a4f2874ec862e23, type: 3}
     - target: {fileID: 9050881205656088066, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: m_Size.y
       value: 0.6

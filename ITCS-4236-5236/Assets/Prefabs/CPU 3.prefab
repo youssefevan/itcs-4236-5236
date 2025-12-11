@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 240660237119260394, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 55133f56c874fc04296adeda0edd7441, type: 3}
     - target: {fileID: 2268573281666583202, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: landTime
       value: 0.2
@@ -72,6 +76,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3550658798040712689, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
+      propertyPath: m_Resource
+      value: 
+      objectReference: {fileID: 8300000, guid: 1377f6108f244954a9eff6c6dffcb3f5, type: 3}
     - target: {fileID: 3597621323555403655, guid: 40f812e1223098e42a3e940cac900cd1, type: 3}
       propertyPath: m_Name
       value: CPU 3
