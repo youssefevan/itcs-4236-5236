@@ -18,6 +18,24 @@ public class Move : State
 
         fighter.rb.linearVelocity = velocity;
 
+        // reverse anim when moving away from opponent
+        bool isMovingForward = (fighter.rb.linearVelocityX * fighter.facing) > 0;
+        bool isMovingBackward = (fighter.rb.linearVelocityX * fighter.facing) < 0;
+
+        AnimatorClipInfo[] info = fighter.animator.GetCurrentAnimatorClipInfo(0);
+        string currentAnim = info[0].clip.name;
+
+        if (isMovingForward && currentAnim != "move")
+        {
+            fighter.animator.Play("move");
+        }
+        else if (isMovingBackward && currentAnim != "retreat")
+        {
+            fighter.animator.Play("retreat");
+        }
+
+
+
         if (!fighter.IsGrounded())
         {
             return states["fall"];
@@ -54,5 +72,13 @@ public class Move : State
         }
 
         return null;
+    }
+
+    public override void Exit()
+    {
+        base.Exit();
+
+        // needed for fighter 3 so i dont have to do it in every animation
+        fighter.sprite.flipX = false;
     }
 }

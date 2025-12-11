@@ -352,14 +352,20 @@ PrefabInstance:
 
         WASD - Move
 
-        Shift - Block
+        Space - Jump
 
-        O
-        - Punch
+        Shift
+        - Block
+
+        O - Punch
 
         P - Kick
 
-        K - Dodge'
+        K - Dodge
+
+
+
+'
       objectReference: {fileID: 0}
     - target: {fileID: 7290947957084756623, guid: ccf6de974458b76458ac0e4f89fe311e, type: 3}
       propertyPath: m_Pivot.x
