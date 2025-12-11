@@ -347,7 +347,19 @@ PrefabInstance:
       propertyPath: m_text
       value: 'Cutscene 1:
 
-        Intro'
+        Intro
+
+
+        WASD - Move
+
+        Shift - Block
+
+        O
+        - Punch
+
+        P - Kick
+
+        K - Dodge'
       objectReference: {fileID: 0}
     - target: {fileID: 7290947957084756623, guid: ccf6de974458b76458ac0e4f89fe311e, type: 3}
       propertyPath: m_Pivot.x
@@ -427,6 +439,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7290947957084756623, guid: ccf6de974458b76458ac0e4f89fe311e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065355040910892268, guid: ccf6de974458b76458ac0e4f89fe311e, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 673.3352
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065355040910892268, guid: ccf6de974458b76458ac0e4f89fe311e, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8727873529166809564, guid: ccf6de974458b76458ac0e4f89fe311e, type: 3}
